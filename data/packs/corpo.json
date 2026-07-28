@@ -1,0 +1,25 @@
+{
+  "id": "corpo",
+  "nome": "Corpo",
+  "en": "Body",
+  "icone": "hand",
+  "ordem": 9,
+  "grupo": "eu",
+  "words": [
+    { "id": "head",  "en": "head",  "pt": "cabeça" },
+    { "id": "hand",  "en": "hand",  "pt": "mão" },
+    { "id": "foot",  "en": "foot",  "pt": "pé" },
+    { "id": "eye",   "en": "eye",   "pt": "olho" },
+    { "id": "nose",  "en": "nose",  "pt": "nariz" },
+    { "id": "mouth", "en": "mouth", "pt": "boca" },
+    { "id": "ear",   "en": "ear",   "pt": "orelha" },
+    { "id": "hair",  "en": "hair",  "pt": "cabelo" },
+    { "id": "arm",    "en": "arm",    "pt": "braço" },
+    { "id": "leg",    "en": "leg",    "pt": "perna" },
+    { "id": "finger", "en": "finger", "pt": "dedo" },
+    { "id": "tooth",  "en": "tooth",  "pt": "dente" },
+    { "id": "tongue", "en": "tongue", "pt": "língua" },
+    { "id": "belly",  "en": "belly",  "pt": "barriga" },
+    { "id": "knee",   "en": "knee",   "pt": "joelho" }
+  ]
+}

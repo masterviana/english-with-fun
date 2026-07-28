@@ -1,0 +1,26 @@
+{
+  "id": "escola",
+  "nome": "Escola",
+  "en": "School",
+  "icone": "backpack",
+  "ordem": 8,
+  "grupo": "escola",
+  "words": [
+    { "id": "pencil",   "en": "pencil",   "pt": "lápis" },
+    { "id": "crayon",   "en": "crayon",   "pt": "lápis de cera" },
+    { "id": "book",     "en": "book",     "pt": "livro" },
+    { "id": "backpack", "en": "backpack", "pt": "mochila" },
+    { "id": "scissors", "en": "scissors", "pt": "tesoura" },
+    { "id": "glue",     "en": "glue",     "pt": "cola" },
+    { "id": "paper",    "en": "paper",    "pt": "papel" },
+    { "id": "paint",    "en": "paint",    "pt": "tinta" },
+    { "id": "ruler",    "en": "ruler",    "pt": "régua" },
+    { "id": "eraser",   "en": "eraser",   "pt": "borracha" },
+    { "id": "pen",      "en": "pen",      "pt": "caneta" },
+    { "id": "notebook", "en": "notebook", "pt": "caderno" },
+    { "id": "computer", "en": "computer", "pt": "computador" },
+    { "id": "desk",     "en": "desk",     "pt": "secretária" },
+    { "id": "bell",     "en": "bell",     "pt": "sino" },
+    { "id": "lunchbox", "en": "lunchbox", "pt": "lancheira" }
+  ]
+}

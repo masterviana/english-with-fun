@@ -1,0 +1,6 @@
+[
+  { "id": "casa",   "en": "Home",    "icone": "door",     "ordem": 1 },
+  { "id": "rua",    "en": "Outside", "icone": "tree",     "ordem": 2 },
+  { "id": "escola", "en": "School",  "icone": "backpack", "ordem": 3 },
+  { "id": "eu",     "en": "Me",      "icone": "shirt",     "ordem": 4 }
+]

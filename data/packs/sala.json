@@ -1,0 +1,20 @@
+{
+  "id": "sala", "nome": "Sala", "en": "Living room", "icone": "door",
+  "ordem": 4, "grupo": "casa",
+  "words": [
+    { "id": "table", "en": "table", "pt": "mesa" },
+    { "id": "chair", "en": "chair", "pt": "cadeira" },
+    { "id": "door",  "en": "door",  "pt": "porta" },
+    { "id": "sofa",  "en": "sofa",  "pt": "sofá" },
+    { "id": "tv",    "en": "TV",    "pt": "televisão" },
+    { "id": "clock", "en": "clock", "pt": "relógio" },
+    { "id": "phone", "en": "phone", "pt": "telemóvel" },
+    { "id": "key",   "en": "key",   "pt": "chave" },
+    { "id": "plant", "en": "plant", "pt": "planta" },
+    { "id": "picture", "en": "picture", "pt": "quadro" },
+    { "id": "remote", "en": "remote", "pt": "comando" },
+    { "id": "shelf", "en": "shelf", "pt": "prateleira" },
+    { "id": "vase", "en": "vase", "pt": "jarra" },
+    { "id": "candle", "en": "candle", "pt": "vela" }
+  ]
+}

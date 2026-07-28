@@ -1,0 +1,18 @@
+{
+  "id": "quarto", "nome": "Quarto", "en": "Bedroom", "icone": "bed",
+  "ordem": 2, "grupo": "casa",
+  "words": [
+    { "id": "bed", "en": "bed", "pt": "cama" },
+    { "id": "pillow", "en": "pillow", "pt": "almofada" },
+    { "id": "blanket", "en": "blanket", "pt": "cobertor" },
+    { "id": "lamp", "en": "lamp", "pt": "candeeiro" },
+    { "id": "teddy", "en": "teddy bear", "pt": "urso de peluche" },
+    { "id": "window", "en": "window", "pt": "janela" },
+    { "id": "wardrobe", "en": "wardrobe", "pt": "armário" },
+    { "id": "rug", "en": "rug", "pt": "tapete" },
+    { "id": "curtain", "en": "curtain", "pt": "cortina" },
+    { "id": "doll", "en": "doll", "pt": "boneca" },
+    { "id": "moon", "en": "moon", "pt": "lua" },
+    { "id": "star", "en": "star", "pt": "estrela" }
+  ]
+}

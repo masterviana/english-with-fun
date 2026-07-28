@@ -1,0 +1,24 @@
+{
+  "id": "cozinha", "nome": "Cozinha", "en": "Kitchen", "icone": "cup",
+  "ordem": 3, "grupo": "casa",
+  "words": [
+    { "id": "cup",    "en": "cup",    "pt": "copo" },
+    { "id": "water",  "en": "water",  "pt": "água" },
+    { "id": "apple",  "en": "apple",  "pt": "maçã" },
+    { "id": "banana", "en": "banana", "pt": "banana" },
+    { "id": "spoon",  "en": "spoon",  "pt": "colher" },
+    { "id": "fork",   "en": "fork",   "pt": "garfo" },
+    { "id": "plate",  "en": "plate",  "pt": "prato" },
+    { "id": "milk",   "en": "milk",   "pt": "leite" },
+    { "id": "bread",  "en": "bread",  "pt": "pão" },
+    { "id": "egg",    "en": "egg",    "pt": "ovo" },
+    { "id": "fridge",     "en": "fridge",     "pt": "frigorífico" },
+    { "id": "pot",        "en": "pot",        "pt": "panela" },
+    { "id": "knife",      "en": "knife",      "pt": "faca" },
+    { "id": "bowl",       "en": "bowl",       "pt": "tigela" },
+    { "id": "strawberry", "en": "strawberry", "pt": "morango" },
+    { "id": "carrot",     "en": "carrot",     "pt": "cenoura" },
+    { "id": "tomato",     "en": "tomato",     "pt": "tomate" },
+    { "id": "pear",       "en": "pear",       "pt": "pera" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "banho", "nome": "Casa de banho", "en": "Bathroom", "icone": "toothbrush",
+  "ordem": 5, "grupo": "casa",
+  "words": [
+    { "id": "soap",       "en": "soap",       "pt": "sabonete" },
+    { "id": "towel",      "en": "towel",      "pt": "toalha" },
+    { "id": "toothbrush", "en": "toothbrush", "pt": "escova de dentes" },
+    { "id": "bathtub",    "en": "bathtub",    "pt": "banheira" },
+    { "id": "toilet",     "en": "toilet",     "pt": "sanita" },
+    { "id": "mirror",     "en": "mirror",     "pt": "espelho" },
+    { "id": "shower",       "en": "shower",       "pt": "chuveiro" },
+    { "id": "shampoo",      "en": "shampoo",      "pt": "champô" },
+    { "id": "comb",         "en": "comb",         "pt": "pente" },
+    { "id": "duck",         "en": "duck",         "pt": "patinho" },
+    { "id": "sink",         "en": "sink",         "pt": "lavatório" },
+    { "id": "toilet_paper", "en": "toilet paper", "pt": "papel higiénico" }
+  ]
+}

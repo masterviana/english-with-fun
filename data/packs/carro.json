@@ -1,0 +1,16 @@
+{
+  "id": "carro", "nome": "Carro", "en": "Car", "icone": "car",
+  "ordem": 7, "grupo": "rua",
+  "words": [
+    { "id": "car", "en": "car", "pt": "carro" },
+    { "id": "wheel", "en": "wheel", "pt": "roda" },
+    { "id": "seat_belt", "en": "seat belt", "pt": "cinto de segurança" },
+    { "id": "road", "en": "road", "pt": "estrada" },
+    { "id": "traffic_light", "en": "traffic light", "pt": "semáforo" },
+    { "id": "bus", "en": "bus", "pt": "autocarro" },
+    { "id": "truck", "en": "truck", "pt": "camião" },
+    { "id": "train", "en": "train", "pt": "comboio" },
+    { "id": "plane", "en": "plane", "pt": "avião" },
+    { "id": "motorbike", "en": "motorbike", "pt": "mota" }
+  ]
+}

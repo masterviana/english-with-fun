@@ -1,0 +1,18 @@
+{
+  "id": "praia", "nome": "Praia", "en": "Beach", "icone": "boat",
+  "ordem": 13, "grupo": "rua",
+  "words": [
+    { "id": "sea", "en": "sea", "pt": "mar" },
+    { "id": "sand", "en": "sand", "pt": "areia" },
+    { "id": "boat", "en": "boat", "pt": "barco" },
+    { "id": "fish", "en": "fish", "pt": "peixe" },
+    { "id": "shell", "en": "shell", "pt": "concha" },
+    { "id": "bucket", "en": "bucket", "pt": "balde" },
+    { "id": "crab", "en": "crab", "pt": "caranguejo" },
+    { "id": "starfish", "en": "starfish", "pt": "estrela-do-mar" },
+    { "id": "umbrella", "en": "umbrella", "pt": "chapéu de sol" },
+    { "id": "sunglasses", "en": "sunglasses", "pt": "óculos de sol" },
+    { "id": "swimsuit", "en": "swimsuit", "pt": "fato de banho" },
+    { "id": "dolphin", "en": "dolphin", "pt": "golfinho" }
+  ]
+}

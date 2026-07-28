@@ -1,0 +1,82 @@
+{
+  "id": "cores",
+  "nome": "Cores",
+  "en": "Colors",
+  "icone": "crayon",
+  "ordem": 1,
+  "words": [
+    {
+      "id": "red", "en": "red", "pt": "vermelho", "cor": "#e94f4f",
+      "phrases": [
+        { "id": "red_1", "en": "The apple is red.", "pt": "A maçã é vermelha." },
+        { "id": "red_2", "en": "I like red.", "pt": "Eu gosto de vermelho." },
+        { "id": "red_3", "en": "My car is red.", "pt": "O meu carro é vermelho." }
+      ]
+    },
+    {
+      "id": "blue", "en": "blue", "pt": "azul", "cor": "#4f7fe9",
+      "phrases": [
+        { "id": "blue_1", "en": "The sea is blue.", "pt": "O mar é azul." },
+        { "id": "blue_2", "en": "I like blue.", "pt": "Eu gosto de azul." },
+        { "id": "blue_3", "en": "My crayon is blue.", "pt": "O meu lápis de cera é azul." }
+      ]
+    },
+    {
+      "id": "yellow", "en": "yellow", "pt": "amarelo", "cor": "#f2c94c",
+      "phrases": [
+        { "id": "yellow_1", "en": "The sun is yellow.", "pt": "O sol é amarelo." },
+        { "id": "yellow_2", "en": "The banana is yellow.", "pt": "A banana é amarela." },
+        { "id": "yellow_3", "en": "I like yellow.", "pt": "Eu gosto de amarelo." }
+      ]
+    },
+    {
+      "id": "green", "en": "green", "pt": "verde", "cor": "#5fbb63",
+      "phrases": [
+        { "id": "green_1", "en": "The tree is green.", "pt": "A árvore é verde." },
+        { "id": "green_2", "en": "My book is green.", "pt": "O meu livro é verde." },
+        { "id": "green_3", "en": "I like green.", "pt": "Eu gosto de verde." }
+      ]
+    },
+    {
+      "id": "pink", "en": "pink", "pt": "cor-de-rosa", "cor": "#f27fb2",
+      "phrases": [
+        { "id": "pink_1", "en": "The flower is pink.", "pt": "A flor é cor-de-rosa." },
+        { "id": "pink_2", "en": "My towel is pink.", "pt": "A minha toalha é cor-de-rosa." },
+        { "id": "pink_3", "en": "I like pink.", "pt": "Eu gosto de cor-de-rosa." }
+      ]
+    },
+    {
+      "id": "purple", "en": "purple", "pt": "roxo", "cor": "#9b6dd6",
+      "phrases": [
+        { "id": "purple_1", "en": "The cup is purple.", "pt": "O copo é roxo." },
+        { "id": "purple_2", "en": "My backpack is purple.", "pt": "A minha mochila é roxa." },
+        { "id": "purple_3", "en": "I like purple.", "pt": "Eu gosto de roxo." }
+      ]
+    },
+    {
+      "id": "orange", "en": "orange", "pt": "laranja", "cor": "#f2994a",
+      "phrases": [
+        { "id": "orange_1", "en": "The cat is orange.", "pt": "O gato é cor de laranja." },
+        { "id": "orange_2", "en": "My ball is orange.", "pt": "A minha bola é cor de laranja." },
+        { "id": "orange_3", "en": "I like orange.", "pt": "Eu gosto de cor de laranja." }
+      ]
+    },
+    {
+      "id": "black", "en": "black", "pt": "preto", "cor": "#3d3a3a",
+      "phrases": [
+        { "id": "black_1", "en": "The wheel is black.", "pt": "A roda é preta." },
+        { "id": "black_2", "en": "My shoe is black.", "pt": "O meu sapato é preto." },
+        { "id": "black_3", "en": "I like black.", "pt": "Eu gosto de preto." }
+      ]
+    },
+    {
+      "id": "white", "en": "white", "pt": "branco", "cor": "#f4f1e8"
+    },
+    {
+      "id": "brown", "en": "brown", "pt": "castanho", "cor": "#a76b3d"
+    },
+    {
+      "id": "gray", "en": "gray", "pt": "cinzento", "cor": "#8b97a6"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "numeros",
+  "nome": "Números",
+  "en": "Numbers",
+  "icone": "three",
+  "ordem": 11,
+  "words": [
+    { "id": "one", "en": "one", "pt": "um" },
+    { "id": "two", "en": "two", "pt": "dois" },
+    { "id": "three", "en": "three", "pt": "três" },
+    { "id": "four", "en": "four", "pt": "quatro" },
+    { "id": "five", "en": "five", "pt": "cinco" },
+    { "id": "six", "en": "six", "pt": "seis" },
+    { "id": "seven", "en": "seven", "pt": "sete" },
+    { "id": "eight", "en": "eight", "pt": "oito" },
+    { "id": "nine", "en": "nine", "pt": "nove" },
+    { "id": "ten", "en": "ten", "pt": "dez" },
+    { "id": "eleven", "en": "eleven", "pt": "onze" },
+    { "id": "twelve", "en": "twelve", "pt": "doze" },
+    { "id": "thirteen", "en": "thirteen", "pt": "treze" },
+    { "id": "fourteen", "en": "fourteen", "pt": "catorze" },
+    { "id": "fifteen", "en": "fifteen", "pt": "quinze" },
+    { "id": "sixteen", "en": "sixteen", "pt": "dezasseis" },
+    { "id": "seventeen", "en": "seventeen", "pt": "dezassete" },
+    { "id": "eighteen", "en": "eighteen", "pt": "dezoito" },
+    { "id": "nineteen", "en": "nineteen", "pt": "dezanove" },
+    { "id": "twenty", "en": "twenty", "pt": "vinte" }
+  ]
+}

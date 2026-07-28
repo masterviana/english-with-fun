@@ -1,0 +1,23 @@
+{
+  "id": "parque", "nome": "Parque", "en": "Park", "icone": "ball",
+  "ordem": 6, "grupo": "rua",
+  "words": [
+    { "id": "ball", "en": "ball", "pt": "bola" },
+    { "id": "swing", "en": "swing", "pt": "baloiço" },
+    { "id": "slide", "en": "slide", "pt": "escorrega" },
+    { "id": "tree", "en": "tree", "pt": "árvore" },
+    { "id": "flower", "en": "flower", "pt": "flor" },
+    { "id": "sun", "en": "sun", "pt": "sol" },
+    { "id": "dog", "en": "dog", "pt": "cão" },
+    { "id": "cat", "en": "cat", "pt": "gato" },
+    { "id": "bird", "en": "bird", "pt": "pássaro" },
+    { "id": "butterfly", "en": "butterfly", "pt": "borboleta" },
+    { "id": "bee", "en": "bee", "pt": "abelha" },
+    { "id": "cloud", "en": "cloud", "pt": "nuvem" },
+    { "id": "rain", "en": "rain", "pt": "chuva" },
+    { "id": "rainbow", "en": "rainbow", "pt": "arco-íris" },
+    { "id": "kite", "en": "kite", "pt": "papagaio de papel" },
+    { "id": "bike", "en": "bike", "pt": "bicicleta" },
+    { "id": "grass", "en": "grass", "pt": "relva" }
+  ]
+}

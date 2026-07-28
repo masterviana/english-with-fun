@@ -1,0 +1,20 @@
+{
+  "id": "comida", "nome": "Comida", "en": "Food", "icone": "pizza",
+  "ordem": 12, "grupo": "casa",
+  "words": [
+    { "id": "pizza", "en": "pizza", "pt": "pizza" },
+    { "id": "cake", "en": "cake", "pt": "bolo" },
+    { "id": "cookie", "en": "cookie", "pt": "bolacha" },
+    { "id": "cheese", "en": "cheese", "pt": "queijo" },
+    { "id": "juice", "en": "juice", "pt": "sumo" },
+    { "id": "ice_cream", "en": "ice cream", "pt": "gelado" },
+    { "id": "soup", "en": "soup", "pt": "sopa" },
+    { "id": "rice",      "en": "rice",      "pt": "arroz" },
+    { "id": "pasta",     "en": "pasta",     "pt": "massa" },
+    { "id": "chicken",   "en": "chicken",   "pt": "frango" },
+    { "id": "chocolate", "en": "chocolate", "pt": "chocolate" },
+    { "id": "candy",     "en": "candy",     "pt": "rebuçado" },
+    { "id": "yogurt",    "en": "yogurt",    "pt": "iogurte" },
+    { "id": "sandwich",  "en": "sandwich",  "pt": "sanduíche" }
+  ]
+}

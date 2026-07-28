@@ -1,0 +1,23 @@
+{
+  "id": "roupa",
+  "nome": "Roupa",
+  "en": "Clothes",
+  "icone": "shirt",
+  "ordem": 10,
+  "grupo": "eu",
+  "words": [
+    { "id": "shirt",  "en": "shirt",  "pt": "camisola" },
+    { "id": "pants",  "en": "pants",  "pt": "calças" },
+    { "id": "dress",  "en": "dress",  "pt": "vestido" },
+    { "id": "shoes",  "en": "shoes",  "pt": "sapatos" },
+    { "id": "socks",  "en": "socks",  "pt": "meias" },
+    { "id": "hat",    "en": "hat",    "pt": "chapéu" },
+    { "id": "jacket", "en": "jacket", "pt": "casaco" },
+    { "id": "skirt",   "en": "skirt",   "pt": "saia" },
+    { "id": "shorts",  "en": "shorts",  "pt": "calções" },
+    { "id": "gloves",  "en": "gloves",  "pt": "luvas" },
+    { "id": "scarf",   "en": "scarf",   "pt": "cachecol" },
+    { "id": "boots",   "en": "boots",   "pt": "botas" },
+    { "id": "pyjamas", "en": "pyjamas", "pt": "pijama" }
+  ]
+}

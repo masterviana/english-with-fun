@@ -1,0 +1,471 @@
+/* =====================================================================
+   styles.css — visual "lápis de cera sobre papel"
+   Dois temas via variáveis CSS: menina (rosa/roxo/azul — por defeito)
+   e menino (azul/verde/laranja).
+   ===================================================================== */
+
+:root {
+  --papel: #fdf8ee;
+  --linha-papel: rgba(120, 100, 70, 0.06);
+  --tinta: #4a3f4e;
+}
+
+body[data-theme="menina"] {
+  --c1: #f27fb2;          /* rosa */
+  --c2: #9b6dd6;          /* roxo */
+  --c3: #6f9bee;          /* azul */
+  --c1-escuro: #b04f7e;
+  --c2-escuro: #5f3f8c;
+  --c3-escuro: #2c4f9e;
+  --fundo-suave: #fdeef5;
+}
+
+body[data-theme="menino"] {
+  --c1: #4f7fe9;          /* azul */
+  --c2: #5fbb63;          /* verde */
+  --c3: #f2994a;          /* laranja */
+  --c1-escuro: #2c4f9e;
+  --c2-escuro: #37743a;
+  --c3-escuro: #a95f1d;
+  --fundo-suave: #eaf1fd;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  font-family: "Comic Sans MS", "Chalkboard SE", "Segoe Print", cursive, sans-serif;
+  color: var(--tinta);
+  background:
+    repeating-linear-gradient(0deg, transparent 0 34px, var(--linha-papel) 34px 35px),
+    radial-gradient(ellipse at 20% 10%, var(--fundo-suave), transparent 60%),
+    var(--papel);
+  user-select: none;
+  touch-action: manipulation;
+  overflow-x: hidden;
+}
+
+#app { max-width: 640px; margin: 0 auto; min-height: 100%; }
+
+.ecra {
+  min-height: 100vh;
+  min-height: 100dvh; /* tablet: ignora barras do browser */
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; /* conteúdo centrado verticalmente */
+  padding: 76px 20px 32px;  /* espaço reservado ao .topo fixo */
+  position: relative;
+}
+
+/* painel dos pais: lista longa, mantém-se a partir do topo */
+.ecra-pais { justify-content: flex-start; }
+
+/* ---- topo ----------------------------------------------------------- */
+
+/* fica preso ao topo do ecrã; o resto centra por baixo */
+.topo {
+  position: absolute;
+  top: 12px; left: 20px; right: 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px;
+  min-height: 52px;
+}
+
+.stars-badge {
+  display: flex; align-items: center; gap: 4px;
+  background: #fff8; border: 3px dashed var(--c2);
+  border-radius: 20px; padding: 4px 14px 4px 6px;
+  font-size: 1.4rem; font-weight: bold; color: var(--c2-escuro);
+}
+.stars-badge .art { width: 34px; height: 34px; }
+
+.btn-gear {
+  background: none; border: none; font-size: 1.5rem;
+  color: var(--tinta); opacity: 0.35; cursor: pointer;
+  padding: 8px;
+}
+
+.pontos { display: flex; gap: 7px; flex: 1; justify-content: center; }
+.ponto {
+  width: 13px; height: 13px; border-radius: 50%;
+  border: 2.5px solid var(--c2-escuro); background: transparent;
+}
+.ponto.ativo { background: var(--c2); }
+
+/* ---- início --------------------------------------------------------- */
+
+.titulo {
+  font-size: 2.6rem; margin: 8px 0 0;
+  color: var(--c1-escuro);
+  text-shadow: 2px 2px 0 #fff, 3px 3px 0 var(--c2);
+  transform: rotate(-2deg);
+}
+
+.mascotes { display: flex; gap: 8px; margin: 8px 0; }
+.mascote { width: 130px; height: 130px; }
+.mascote.grande { width: 170px; height: 170px; }
+.mascote .art, .btn-icone .art, .estrela-premio .art { width: 100%; height: 100%; }
+
+.salta { animation: saltar 0.8s ease-in-out infinite; }
+@keyframes saltar {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-14px) rotate(2deg); }
+}
+
+.botoes-principais {
+  display: flex; gap: 20px; margin-top: 18px; flex-wrap: wrap; justify-content: center;
+}
+
+.btn-grande {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  font-family: inherit; font-size: 1.7rem; font-weight: bold;
+  color: #fff; cursor: pointer;
+  padding: 18px 26px 14px;
+  border-radius: 26px;
+  border: 4px solid;
+  min-width: 170px;
+  transition: transform 0.1s;
+}
+.btn-grande:disabled { opacity: 0.45; }
+.btn-icone { width: 74px; height: 74px; }
+
+.btn-aprender { background: var(--c2); border-color: var(--c2-escuro); box-shadow: 0 6px 0 var(--c2-escuro); }
+.btn-jogar    { background: var(--c1); border-color: var(--c1-escuro); box-shadow: 0 6px 0 var(--c1-escuro); }
+
+.badge {
+  position: absolute; top: -12px; right: -10px;
+  background: var(--c3); border: 3px solid var(--c3-escuro);
+  color: #fff; border-radius: 50%;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+}
+.badge-due { background: #f2c94c; border-color: #b78f22; color: #6b5410; }
+
+.dica { font-size: 1.05rem; opacity: 0.7; margin-top: 20px; text-align: center; }
+
+/* ---- aprender -------------------------------------------------------- */
+
+.cartao {
+  background: #fff;
+  border: 5px solid var(--c2);
+  border-radius: 30px;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.08), inset 0 0 0 8px var(--fundo-suave);
+  padding: 20px 28px 24px;
+  margin-top: 18px;
+  display: flex; flex-direction: column; align-items: center;
+  cursor: pointer;
+  position: relative;
+  transform: rotate(-1deg);
+  max-width: 380px; width: 100%;
+}
+
+.cartao-arte { width: min(58vw, 250px); height: min(58vw, 250px); }
+.cartao-arte .art { width: 100%; height: 100%; }
+.cartao-arte.media { width: 140px; height: 140px; }
+
+.cartao-palavra {
+  font-size: 2.6rem; font-weight: bold; color: var(--c1-escuro);
+  margin-top: 4px; letter-spacing: 1px;
+}
+.cartao-traducao { font-size: 1.1rem; opacity: 0.5; }
+
+.btn-som {
+  position: absolute; top: -16px; right: -14px;
+  font-size: 1.7rem;
+  background: var(--c3); border: 4px solid var(--c3-escuro);
+  border-radius: 50%; width: 62px; height: 62px;
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--c3-escuro);
+}
+.btn-som:active { transform: scale(0.9); }
+
+.btn-som-jogo {
+  position: static; margin: 22px auto 6px;
+  width: 96px; height: 96px; font-size: 2.6rem;
+  display: block;
+  animation: pulsar 1.6s ease-in-out infinite;
+}
+@keyframes pulsar {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.08); }
+}
+
+.btn-seguinte {
+  margin-top: 26px;
+  font-size: 2.4rem; color: #fff;
+  background: var(--c2); border: 4px solid var(--c2-escuro);
+  box-shadow: 0 6px 0 var(--c2-escuro);
+  border-radius: 50%; width: 88px; height: 88px;
+  cursor: pointer;
+}
+.btn-seguinte:active { transform: scale(0.92); }
+
+.btn-voltar {
+  background: none; border: none;
+  font-size: 1.9rem; color: var(--tinta); opacity: 0.4;
+  cursor: pointer; padding: 6px 10px;
+}
+
+/* ---- jogar ------------------------------------------------------------ */
+
+.opcoes {
+  display: flex; flex-wrap: wrap; gap: 18px;
+  justify-content: center; margin-top: 20px;
+}
+
+.opcao {
+  background: #fff;
+  border: 5px solid var(--c3);
+  border-radius: 26px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+  width: min(40vw, 180px); height: min(40vw, 180px);
+  padding: 10px; cursor: pointer;
+  transition: transform 0.1s;
+}
+.opcao:nth-child(2) { border-color: var(--c1); }
+.opcao:nth-child(3) { border-color: var(--c2); }
+.opcao:active { transform: scale(0.94); }
+.opcao .art { width: 100%; height: 100%; }
+
+.opcao.errada {
+  animation: abanar 0.4s;
+  opacity: 0.35; filter: grayscale(0.7);
+}
+@keyframes abanar {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px) rotate(-2deg); }
+  75% { transform: translateX(8px) rotate(2deg); }
+}
+
+/* ---- mensagens / recompensa ------------------------------------------- */
+
+.ecra-msg { justify-content: center; text-align: center; position: relative; }
+
+.balao {
+  background: #fff;
+  border: 4px solid var(--c2);
+  border-radius: 24px;
+  padding: 16px 26px;
+  font-size: 1.7rem; font-weight: bold;
+  color: var(--c2-escuro);
+  position: relative;
+  margin: 18px 0;
+  max-width: 420px;
+}
+.balao::before {
+  content: "";
+  position: absolute; top: -16px; left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: var(--c2);
+}
+
+.estrela-premio {
+  width: 190px; height: 190px;
+  animation: rodarEstrela 1.4s ease-out;
+}
+@keyframes rodarEstrela {
+  from { transform: scale(0) rotate(-180deg); }
+  60%  { transform: scale(1.2) rotate(10deg); }
+  to   { transform: scale(1) rotate(0); }
+}
+
+.botoes-fim { display: flex; gap: 16px; margin-top: 20px; flex-wrap: wrap; justify-content: center; }
+
+.confetti { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.confete {
+  position: absolute; top: -20px;
+  width: 12px; height: 12px; border-radius: 3px;
+  animation: cair linear forwards;
+}
+@keyframes cair {
+  to { transform: translateY(105vh) rotate(540deg); opacity: 0.4; }
+}
+
+/* ---- painel dos pais --------------------------------------------------- */
+
+.ecra-pais { font-family: system-ui, sans-serif; align-items: stretch; }
+.ecra-pais h2 { text-align: center; color: var(--c2-escuro); margin: 6px 0; }
+.pais-info { text-align: center; font-size: 0.95rem; }
+
+.tema-escolha { text-align: center; margin: 8px 0; font-size: 0.95rem; }
+.btn-tema {
+  font-family: inherit; font-size: 0.95rem;
+  margin: 0 4px; padding: 8px 14px;
+  border-radius: 14px; border: 2px solid var(--c2-escuro);
+  background: #fff; cursor: pointer;
+}
+
+.tabela-wrap {
+  background: #fff; border-radius: 14px;
+  border: 2px solid #e5ddcf;
+  margin: 10px 0; overflow-y: auto; max-height: 46vh;
+}
+.ecra-pais table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.ecra-pais td { padding: 8px 12px; border-bottom: 1px solid #f0ead9; }
+.ecra-pais tr.nao-vista { opacity: 0.45; }
+.ecra-pais td .pt { display: block; font-size: 0.78rem; opacity: 0.55; }
+
+.niveis { white-space: nowrap; }
+.nivel {
+  display: inline-block; width: 12px; height: 12px;
+  border-radius: 50%; margin-right: 3px;
+  border: 2px solid var(--c2-escuro); background: transparent;
+}
+.nivel.cheio { background: var(--c2); }
+
+.tag-due {
+  background: #fdf0c8; color: #8a6d1a;
+  border-radius: 10px; padding: 2px 8px; font-size: 0.8rem;
+}
+
+.pais-nota { font-size: 0.82rem; opacity: 0.65; }
+.pais-nota code { background: #f3eee1; padding: 1px 5px; border-radius: 5px; }
+
+.btn-pequeno {
+  font-family: inherit; font-size: 1rem;
+  padding: 12px 20px; border-radius: 14px;
+  border: 2px solid var(--c2-escuro);
+  background: var(--c2); color: #fff; cursor: pointer;
+}
+.btn-pequeno.perigo { background: #e05656; border-color: #9c2f2f; }
+
+/* ---- responsivo -------------------------------------------------------- */
+
+@media (max-height: 640px) {
+  .mascote { width: 100px; height: 100px; }
+  .titulo { font-size: 2rem; }
+  .cartao-arte { width: 180px; height: 180px; }
+}
+
+/* ---- Nuxt: wrapper de arte -------------------------------------------- */
+
+.word-art { display: contents; }
+
+/* ---- transições de página --------------------------------------------- */
+
+.page-enter-active,
+.page-leave-active { transition: opacity 0.25s ease, transform 0.25s ease; }
+.page-enter-from { opacity: 0; transform: translateY(14px) scale(0.98); }
+.page-leave-to   { opacity: 0; transform: translateY(-10px) scale(0.99); }
+
+/* ---- acessibilidade ---------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- polish: micro-interações ----------------------------------------- */
+
+/* cartão de aprender entra com "pop" elástico (dispara por :key) */
+.cartao {
+  animation: cartaoEntra 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes cartaoEntra {
+  from { transform: scale(0.6) rotate(-7deg); opacity: 0; }
+  to   { transform: scale(1) rotate(-1deg); opacity: 1; }
+}
+
+/* opções do quiz entram em cascata */
+.opcao {
+  animation: opcaoEntra 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+.opcao:nth-child(1) { animation-delay: 0.05s; }
+.opcao:nth-child(2) { animation-delay: 0.16s; }
+.opcao:nth-child(3) { animation-delay: 0.27s; }
+@keyframes opcaoEntra {
+  from { transform: scale(0.5) translateY(24px); opacity: 0; }
+}
+
+/* mascotes balançam suavemente em repouso (substitui o rotate estático) */
+.mascote:nth-child(1) { animation: balancarA 3.4s ease-in-out infinite; }
+.mascote:nth-child(2) { animation: balancarB 3.8s ease-in-out infinite; }
+@keyframes balancarA {
+  0%, 100% { transform: rotate(-3.5deg); }
+  50%      { transform: rotate(-0.5deg) translateY(-3px); }
+}
+@keyframes balancarB {
+  0%, 100% { transform: rotate(3.5deg); }
+  50%      { transform: rotate(0.5deg) translateY(-3px); }
+}
+/* .salta (festa) tem prioridade sobre o balanço */
+.mascote.salta { animation: saltar 0.8s ease-in-out infinite; }
+
+/* título ondula uma vez à entrada */
+.titulo { animation: tituloEntra 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes tituloEntra {
+  from { transform: rotate(-2deg) scale(0.7) translateY(-16px); opacity: 0; }
+  to   { transform: rotate(-2deg) scale(1); opacity: 1; }
+}
+
+/* balão de fala aparece com salto */
+.balao { animation: balaoEntra 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes balaoEntra {
+  from { transform: scale(0.75) translateY(10px); opacity: 0; }
+}
+
+/* botões grandes afundam com mais convicção */
+.btn-grande { transition: transform 0.12s ease, box-shadow 0.12s ease; }
+.btn-grande:active {
+  transform: scale(0.94) translateY(4px);
+  box-shadow: 0 2px 0 var(--c2-escuro);
+}
+
+/* ---- escolha de tema (Learn) ------------------------------------------ */
+
+.temas {
+  display: flex; flex-wrap: wrap; gap: 18px;
+  justify-content: center; margin-top: 20px;
+}
+
+.tema {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  background: #fff;
+  border: 5px solid var(--c2);
+  border-radius: 26px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.1);
+  width: min(38vw, 170px);
+  padding: 14px 10px 12px;
+  font-family: inherit; font-size: 1.25rem; font-weight: bold;
+  color: var(--c2-escuro);
+  cursor: pointer;
+  transition: transform 0.1s;
+  animation: opcaoEntra 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+.tema:nth-child(2) { border-color: var(--c1); color: var(--c1-escuro); animation-delay: 0.12s; }
+.tema:nth-child(3) { border-color: var(--c3); color: var(--c3-escuro); animation-delay: 0.24s; }
+.tema:nth-child(4) { animation-delay: 0.36s; }
+.tema:nth-child(5) { animation-delay: 0.48s; }
+.tema:active { transform: scale(0.94); }
+.tema:disabled { opacity: 0.55; cursor: default; }
+
+.tema-icone { width: 84px; height: 84px; }
+.tema-icone .art { width: 100%; height: 100%; }
+
+.tema-feito {
+  position: absolute; top: -12px; right: -10px;
+  background: var(--c2); border: 3px solid var(--c2-escuro);
+  color: #fff; border-radius: 50%;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* balão-bónus: anúncio de palavras desbloqueadas no fim do jogo */
+.balao-bonus {
+  border-color: #f2c94c;
+  color: #8a6d1a;
+  font-size: 1.3rem;
+  margin-top: 0;
+  animation: balaoEntra 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) 1.6s backwards;
+}
+.balao-bonus::before { border-bottom-color: #f2c94c; }
+
+/* Play sem palavras vistas: esbatido mas tocável (encaminha para o Learn) */
+.btn-grande.apagado { opacity: 0.55; }
