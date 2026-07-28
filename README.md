@@ -1,45 +1,79 @@
 # English Fun! 🖍️
 
-Jogo de vocabulário de inglês para crianças (5-9 anos), com repetição
-espaçada (lógica tipo Anki) escondida por baixo de um jogo de cartões
-ilustrados em estilo lápis de cera. Nuxt 4, 100% estático, publicado
-no GitHub Pages.
+A vocabulary game that teaches English to young kids (ages 5-9) through
+pictures, sound and play — with spaced repetition (Anki-style) quietly
+doing the heavy lifting underneath.
 
-## Desenvolvimento
+<p align="center">
+  <img src="docs/media/demo.gif" width="320" alt="English Fun! gameplay demo" />
+</p>
 
-    npm install
-    npm run dev        # http://localhost:3000/english-with-fun/
-    npm test           # testes do motor SRS
-    npm run check      # valida o conteúdo (packs, arte, áudio)
-    npm run generate   # build estático em .output/public
+**▶ Play it:** [masterviana.github.io/english-with-fun](https://masterviana.github.io/english-with-fun/)
 
-## Conteúdo
+## Screenshots
 
-Vocabulário em `data/packs/*.json` (1 ficheiro por tema). Para adicionar
-temas/palavras, ver `AGENTS.md` — a receita serve para humanos e agentes.
+| Home | World map | Learn | Play |
+|:---:|:---:|:---:|:---:|
+| ![Home](docs/media/01-home.png) | ![World map](docs/media/02-map.png) | ![Learn](docs/media/03-learn.png) | ![Quiz](docs/media/04-play.png) |
 
-## Vozes
+## What's inside
 
-    pip install edge-tts
-    python3 scripts/gerar_audio.py
+- **184 words** across 13 themes, organised as explorable worlds:
+  Colors, Numbers 1-20, 🏠 Home (bedroom, kitchen, living room,
+  bathroom, food), 🌳 Outside (park, car, beach), 👤 Me (body, clothes)
+  and 🎒 School.
+- **Hand-drawn SVG art** in a crayon-on-paper style, one illustration
+  per word, with card borders matching each drawing's dominant colour.
+- **Real voice** for every word (child-friendly TTS, slowed down and
+  padded so little ears catch every sound), with Web Speech fallback.
+- **Learn** — the child picks a theme and meets up to 4 new words:
+  big card, picture, word and voice. Tap to hear it again.
+- **Play** — listen and tap the right picture. Correct answers feed the
+  spaced-repetition engine; mistakes are never punished ("Almost!
+  Listen again"), and stars rain down at the end.
+- **Progress-based unlocking** — new words open up only when reviews
+  are done and recent words are mastered. No clocks, no daily nagging:
+  the child sets the pace by playing well.
+- **Made for tablets** — add it to the home screen and it runs
+  full-screen like an app (PWA), fully offline-friendly and 100% static.
+- **Parents' panel** — long-press the ⚙ gear: per-word levels, theme
+  switch and reset.
 
-Gera mp3 (voz en-US-AnaNeural) em `public/audio/`. Sem eles, a app usa a
-voz do browser (Web Speech API) — funciona na mesma.
+## How the spaced repetition works
+
+Every word has a level from 0 to 5. Answering right on the first tap
+moves it up and schedules the next review further away (1, 2, 4, 7, 14
+days); missing brings it back sooner. New words unlock only while there
+are no pending reviews and fewer than 4 "weak" words — so learning
+always stands on solid ground. The child never self-grades; the quiz is
+the grader, and it only ever celebrates.
+
+## Development
+
+```bash
+npm install
+npm run dev        # http://localhost:3000/english-with-fun/
+npm test           # spaced-repetition engine tests
+npm run check      # content validator (packs, art, audio coverage)
+npm run generate   # static build in .output/public
+```
+
+## Adding content
+
+Vocabulary lives in `data/packs/*.json` (one file per theme), worlds in
+`data/grupos.json`, and all artwork in `app/utils/art.mjs`. The full
+recipe (schema, art style contract, preview tooling, validation) is in
+[`AGENTS.md`](AGENTS.md). Preview any drawing with
+`node scripts/preview_art.mjs <id>`.
+
+Voices are generated once with [edge-tts](https://github.com/rany2/edge-tts):
+
+```bash
+pip install edge-tts
+python3 scripts/gerar_audio.py
+```
 
 ## Deploy
 
-Push a `main` → GitHub Actions corre check + testes + `nuxt generate` e
-publica no Pages. Configuração única no GitHub: Settings → Pages →
-Source: "GitHub Actions".
-
-## Como funciona a repetição espaçada
-
-- Nível 0-5 por palavra; intervalos `[hoje, 1, 2, 4, 7, 14]` dias.
-- Acertar à primeira no quiz sobe o nível; errar desce-o e a palavra
-  volta em breve. A criança nunca se auto-avalia.
-- Novas dependem do progresso (sem relógio): abrem quando não há revisões
-  pendentes e há menos de 4 palavras "fracas" (nível <2). Máx 4 de cada vez.
-- O erro nunca é punido.
-- Progresso em `localStorage` (`jogoIngles.v1`).
-
-A versão anterior (vanilla JS) está em `legacy/` até validação final.
+Every push to `main` runs GitHub Actions: content check → tests →
+`nuxt generate` → GitHub Pages. Nothing to run manually.
