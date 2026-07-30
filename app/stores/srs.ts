@@ -10,6 +10,9 @@ export const MAX_NOVAS_POR_SESSAO = 4
    há menos de MAX_APRENDIZES palavras "fracas" (nível < 2) e nenhuma
    revisão pendente */
 export const MAX_APRENDIZES = 4
+/* garantia anti-frustração: ao fim deste nº de jogos completos sem
+   palavras novas, o desbloqueio é FORÇADO (o progresso pode abrir antes) */
+export const JOGOS_PARA_DESBLOQUEIO = 4
 /* frases de contexto desbloqueiam quando a palavra-mãe atinge este nível */
 export const NIVEL_DESBLOQUEIO_FRASES = 3
 const DIA_MS = 24 * 60 * 60 * 1000
@@ -35,6 +38,8 @@ interface SrsState {
   stars: number
   theme: Theme
   loaded: boolean
+  /* jogos completos desde as últimas palavras novas */
+  jogosDesdeNovas: number
 }
 
 function novoCard(): CardState {
@@ -47,6 +52,7 @@ export const useSrsStore = defineStore('srs', {
     stars: 0,
     theme: 'menina',
     loaded: false,
+    jogosDesdeNovas: 0,
   }),
 
   getters: {
@@ -97,6 +103,7 @@ export const useSrsStore = defineStore('srs', {
           this.cards = s.cards ?? {}
           this.stars = s.stars ?? 0
           this.theme = s.theme === 'menino' ? 'menino' : 'menina'
+          this.jogosDesdeNovas = s.jogosDesdeNovas ?? 0
         }
       } catch {
         /* localStorage indisponível → continua em memória */
@@ -108,7 +115,12 @@ export const useSrsStore = defineStore('srs', {
       try {
         localStorage.setItem(
           STORAGE_KEY,
-          JSON.stringify({ cards: this.cards, stars: this.stars, theme: this.theme }),
+          JSON.stringify({
+            cards: this.cards,
+            stars: this.stars,
+            theme: this.theme,
+            jogosDesdeNovas: this.jogosDesdeNovas,
+          }),
         )
       } catch {
         /* sem persistência, continua em memória */
@@ -126,11 +138,19 @@ export const useSrsStore = defineStore('srs', {
        revisões pendentes e as palavras "fracas" (nível < 2) são poucas.
        Função (não getter): depende de Date.now() via palavrasDue. */
     novasDisponiveis(): number {
+      // garantia: 4 jogos completos sem novas → desbloqueio forçado
+      if (this.jogosDesdeNovas >= JOGOS_PARA_DESBLOQUEIO) return MAX_NOVAS_POR_SESSAO
       if (this.palavrasDue.length > 0) return 0
       const aprendizes = this.palavrasVistas.filter(
         (w) => this.cards[w.id]!.level < 2,
       ).length
       return Math.max(0, Math.min(MAX_NOVAS_POR_SESSAO, MAX_APRENDIZES - aprendizes))
+    },
+
+    /* chamar no FIM de cada jogo completo (o Play trata disso) */
+    registarJogo() {
+      this.jogosDesdeNovas++
+      this.save()
     },
 
     /* Novas para uma sessão de Learn: respeita a dosagem diária e,
@@ -185,6 +205,7 @@ export const useSrsStore = defineStore('srs', {
         c.seen = true
         c.level = 0
         c.due = Date.now()
+        this.jogosDesdeNovas = 0 // aprendeu novas → contador reinicia
         this.save()
       }
     },
@@ -217,6 +238,7 @@ export const useSrsStore = defineStore('srs', {
     reset() {
       this.cards = {}
       this.stars = 0
+      this.jogosDesdeNovas = 0
       this.save()
     },
 

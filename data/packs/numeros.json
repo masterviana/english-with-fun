@@ -5,6 +5,7 @@
   "icone": "three",
   "ordem": 11,
   "words": [
+    { "id": "zero", "en": "zero", "pt": "zero" },
     { "id": "one", "en": "one", "pt": "um" },
     { "id": "two", "en": "two", "pt": "dois" },
     { "id": "three", "en": "three", "pt": "três" },
@@ -24,6 +25,9 @@
     { "id": "seventeen", "en": "seventeen", "pt": "dezassete" },
     { "id": "eighteen", "en": "eighteen", "pt": "dezoito" },
     { "id": "nineteen", "en": "nineteen", "pt": "dezanove" },
-    { "id": "twenty", "en": "twenty", "pt": "vinte" }
+    { "id": "twenty", "en": "twenty", "pt": "vinte" },
+    { "id": "thirty", "en": "thirty", "pt": "trinta" },
+    { "id": "forty", "en": "forty", "pt": "quarenta" },
+    { "id": "fifty", "en": "fifty", "pt": "cinquenta" }
   ]
 }

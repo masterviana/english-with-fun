@@ -296,3 +296,45 @@ describe('frases de contexto', () => {
     expect(new Set(fila.map((c) => c.id)).size).toBe(fila.length)
   })
 })
+
+describe('garantia de desbloqueio ao fim de 4 jogos', () => {
+  it('mesmo com palavras fracas e revisões pendentes, 4 jogos abrem novas', () => {
+    const srs = useSrsStore()
+    for (const w of srs.escolherNovas()) srs.marcarVista(w.id)
+    // erra tudo: fracas + due pendente → portão de progresso fechado
+    for (const w of srs.palavrasVistas) srs.avaliar(w.id, false)
+    expect(srs.novasDisponiveis()).toBe(0)
+
+    for (let j = 0; j < 3; j++) srs.registarJogo()
+    expect(srs.novasDisponiveis()).toBe(0) // 3 ainda não chega
+    srs.registarJogo() // 4.º jogo
+    expect(srs.novasDisponiveis()).toBe(MAX_NOVAS_POR_SESSAO)
+    expect(srs.escolherNovas().length).toBe(4)
+  })
+
+  it('aprender novas reinicia o contador de jogos', () => {
+    const srs = useSrsStore()
+    for (let j = 0; j < 4; j++) srs.registarJogo()
+    expect(srs.novasDisponiveis()).toBe(4)
+    srs.marcarVista(srs.escolherNovas()[0]!.id)
+    expect(srs.jogosDesdeNovas).toBe(0)
+  })
+
+  it('o progresso continua a poder abrir antes dos 4 jogos', () => {
+    const srs = useSrsStore()
+    srs.marcarVista('red')
+    for (let k = 0; k < 2; k++) srs.avaliar('red', true) // nível 2, sem due
+    expect(srs.jogosDesdeNovas).toBe(0)
+    expect(srs.novasDisponiveis()).toBe(4)
+  })
+
+  it('contador persiste em localStorage', () => {
+    const srs = useSrsStore()
+    srs.registarJogo()
+    srs.registarJogo()
+    setActivePinia(createPinia())
+    const srs2 = useSrsStore()
+    srs2.load()
+    expect(srs2.jogosDesdeNovas).toBe(2)
+  })
+})

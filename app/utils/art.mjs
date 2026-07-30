@@ -338,6 +338,47 @@ D.teddy = wrap(
   '<circle cx="82" cy="70" r="8" ' + F("#c98a52", "#6d4423") + "/>"
 );
 
+D.slippers = wrap(
+  // par de pantufas vistas de cima: 2 formas ovais alongadas (pé) lado a
+  // lado, cada uma com uma tira/gáspea a cobrir a frente e um botão redondo
+  '<ellipse cx="30" cy="58" rx="20" ry="34" ' + F("#f27fb2", "#b04f7e") + "/>" +
+  '<path d="M14 40 Q30 26 46 40 Q46 50 30 48 Q14 50 14 40 Z" ' + F("#b04f7e", "#8c3560", 'stroke-width="3"') + "/>" +
+  '<circle cx="30" cy="40" r="4" fill="#f2c94c" stroke="#b78f22" stroke-width="2"/>' +
+  '<ellipse cx="70" cy="58" rx="20" ry="34" ' + F("#f27fb2", "#b04f7e") + "/>" +
+  '<path d="M54 40 Q70 26 86 40 Q86 50 70 48 Q54 50 54 40 Z" ' + F("#b04f7e", "#8c3560", 'stroke-width="3"') + "/>" +
+  '<circle cx="70" cy="40" r="4" fill="#f2c94c" stroke="#b78f22" stroke-width="2"/>'
+);
+
+D.toy_box = wrap(
+  // baú de brinquedos aberto: tampa reta apoiada em pé atrás + caixa à
+  // frente com uma bola bem visível dentro; a cabeça redonda do urso
+  // (com 2 orelhas) sobrepõe-se ao rebordo de trás para ler como "a espreitar"
+  '<rect x="24" y="10" width="46" height="36" rx="5" ' + F("#f27fb2", "#b04f7e") + "/>" +
+  '<circle cx="60" cy="30" r="8" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<circle cx="76" cy="30" r="8" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<circle cx="68" cy="38" r="16" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<circle cx="68" cy="40" r="7" ' + F("#e8c79b", "#6d4423", 'stroke-width="2.5"') + "/>" +
+  '<rect x="14" y="44" width="72" height="40" rx="7" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<circle cx="38" cy="58" r="13" ' + F("#f2c94c", "#b78f22") + "/>" +
+  '<path d="M18 84 L18 90 M82 84 L82 90" ' + S("#96302f", 'stroke-width="6"') + "/>"
+);
+
+D.drawer = wrap(
+  // móvel com uma gaveta puxada para fora, meia (peúga) a espreitar
+  '<rect x="16" y="14" width="68" height="72" rx="6" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<rect x="10" y="44" width="80" height="26" rx="5" ' + F("#c98a52", "#6d4423", 'stroke-width="4"') + "/>" +
+  '<rect x="42" y="54" width="16" height="6" rx="3" ' + F("#6d4423", "#6d4423") + "/>" +
+  '<path d="M52 60 Q48 74 56 82 Q60 86 58 78 Q54 68 58 62 Z" ' + F("#f2c94c", "#b78f22", 'stroke-width="3"') + "/>" +
+  '<path d="M22 24 h20 M22 32 h20" ' + S("#6d4423", 'stroke-width="3" stroke-opacity="0.5"') + "/>"
+);
+
+D.hanger = wrap(
+  // cabide: gancho em cima + triângulo largo com barra reta em baixo
+  '<path d="M50 8 Q42 8 42 16 Q42 22 50 24" ' + S("#2c4f9e", 'stroke-width="5"') + "/>" +
+  '<path d="M50 24 L14 54 L50 54 L86 54 Z" ' + S("#4f7fe9", 'stroke-width="6"') + "/>" +
+  '<path d="M20 54 L80 54" ' + S("#4f7fe9", 'stroke-width="6"') + "/>"
+);
+
 D.window = wrap(
   '<rect x="16" y="14" width="68" height="64" rx="6" ' + F("#f7f3e8", "#b7ac95") + "/>" +
   '<rect x="24" y="22" width="52" height="48" ' + F("#8fc1ee", "#5b8fd6") + "/>" +
@@ -437,6 +478,46 @@ D.bread = wrap(
   '<path d="M26 44 Q30 40 36 42" ' + S("#e8c79b", 'stroke-width="2.5" stroke-opacity="0.7"') + "/>"
 );
 
+D.pan = wrap(
+  // frigideira vista de lado: corpo raso arredondado + cabo comprido reto + ovo lá dentro
+  '<path d="M14 62 Q14 78 40 78 L64 78 Q86 78 86 62 Q86 50 64 50 L40 50 Q14 50 14 62 Z" ' + F("#8b97a6", "#5c6b7a") + "/>" +
+  '<path d="M20 62 Q20 70 40 70 L64 70 Q80 70 80 62" fill="none" stroke="#aab6c4" stroke-width="3" stroke-opacity="0.6"/>' +
+  '<path d="M18 55 L4 51" ' + S("#5c6b7a", 'stroke-width="7"') + "/>" +
+  '<ellipse cx="50" cy="60" rx="18" ry="10" fill="#f7f3e8" fill-opacity="0.92" stroke="#5c6b7a" stroke-width="2.5"/>' +
+  '<circle cx="46" cy="59" r="7" ' + F("#f2c94c", "#b78f22") + "/>"
+);
+
+D.oven = wrap(
+  // forno: caixa com porta de janela oval + 2 botões redondos em cima + bolo lá dentro
+  '<rect x="14" y="12" width="72" height="76" rx="8" ' + F("#8b97a6", "#5c6b7a") + "/>" +
+  '<circle cx="30" cy="24" r="5" ' + F("#f2c94c", "#b78f22", 'stroke-width="3"') + "/>" +
+  '<circle cx="50" cy="24" r="5" ' + F("#f2c94c", "#b78f22", 'stroke-width="3"') + "/>" +
+  '<ellipse cx="50" cy="58" rx="28" ry="22" fill="#dbe7fb" fill-opacity="0.9" stroke="#5c6b7a" stroke-width="4"/>' +
+  '<path d="M32 68 Q32 50 50 50 Q68 50 68 68 Z" ' + F("#c98a52", "#6d4423", 'stroke-width="3"') + "/>"
+);
+
+D.kettle = wrap(
+  // chaleira de perfil clássico: corpo bojudo redondo, asa em arco FECHADO
+  // no topo (não se confunde com bico), tampa com botão, e um BICO
+  // comprido, largo na base e afunilado na ponta, bem separado da asa,
+  // a sair do lado direito do corpo e a apontar para cima — inconfundível
+  '<path d="M18 54 Q16 86 48 88 Q80 86 78 54 Q78 34 48 32 Q18 34 18 54 Z" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<path d="M34 32 Q34 16 48 16 Q62 16 62 32" ' + S("#96302f", 'stroke-width="6"') + "/>" +
+  '<ellipse cx="48" cy="30" rx="13" ry="6" ' + F("#96302f", "#6d2422", 'stroke-width="3"') + "/>" +
+  '<circle cx="48" cy="24" r="4.5" ' + F("#96302f", "#6d2422", 'stroke-width="2.5"') + "/>" +
+  '<path d="M72 46 Q90 40 94 22 Q95 15 87 17 Q82 19 80 28 Q77 43 62 50 Z" ' + F("#96302f", "#6d2422", 'stroke-width="3"') + "/>" +
+  '<path d="M90 12 Q84 5 90 -1" ' + S("#8b97a6", 'stroke-width="3.5" stroke-opacity="0.7"') + "/>"
+);
+
+D.toaster = wrap(
+  // torradeira: corpo retangular arredondado + 2 fatias de pão a saltar em cima + botão lateral
+  '<rect x="16" y="34" width="68" height="46" rx="10" ' + F("#8fc1ee", "#5b8fd6") + "/>" +
+  '<path d="M32 34 L28 12 Q28 8 32 8 L44 8 Q48 8 48 12 L46 34 Z" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<path d="M56 34 L54 14 Q54 10 58 10 L68 10 Q72 10 72 14 L72 34 Z" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<circle cx="76" cy="58" r="4" ' + F("#5b8fd6", "#2c4f9e") + "/>" +
+  '<path d="M24 60 h20" ' + S("#5b8fd6", 'stroke-width="3" stroke-opacity="0.5"') + "/>"
+);
+
 D.egg = wrap(
   '<path d="M14 56 Q10 40 30 34 Q46 30 58 38 Q72 32 84 42 Q94 50 84 60 Q88 72 70 74 Q50 78 30 72 Q12 70 14 56 Z" ' + F("#f7f3e8", "#b7ac95") + "/>" +
   '<circle cx="58" cy="52" r="16" ' + F("#f2c94c", "#b78f22") + "/>" +
@@ -508,6 +589,15 @@ D.sofa = wrap(
   '<path d="M30 30 Q50 24 70 30" ' + S("#37743a", 'stroke-width="2.5" stroke-opacity="0.5"') + "/>"
 );
 
+D.stairs = wrap(
+  // 5 degraus de madeira a subir da esquerda para a direita + corrimão
+  // contínuo acompanhando a subida, apoiado em postes retos em cada degrau
+  '<path d="M6 90 L6 76 L22 76 L22 62 L38 62 L38 48 L54 48 L54 34 L70 34 L70 20 L92 20 L92 90 Z" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<path d="M6 76 L22 76 M22 62 L38 62 M38 48 L54 48 M54 34 L70 34" ' + S("#6d4423", 'stroke-width="3" stroke-opacity="0.6"') + "/>" +
+  '<path d="M14 76 L14 66 M30 62 L30 52 M46 48 L46 38 M62 34 L62 24 M78 20 L78 10" ' + S("#8a5a33", 'stroke-width="4.5"') + "/>" +
+  '<path d="M14 66 L30 52 L46 38 L62 24 L78 10" ' + S("#8a5a33", 'stroke-width="5.5"') + "/>"
+);
+
 D.tv = wrap(
   '<rect x="14" y="18" width="72" height="48" rx="8" ' + F("#8b97a6", "#5c6b7a") + "/>" +
   '<rect x="22" y="26" width="56" height="32" rx="3" ' + F("#8fc1ee", "#5b8fd6", 'stroke-width="3"') + "/>" +
@@ -537,6 +627,35 @@ D.key = wrap(
   '<circle cx="30" cy="34" r="6" fill="#f7f3e8" fill-opacity="0.95" stroke="#b78f22" stroke-width="3"/>' +
   '<path d="M42 44 L78 80" ' + S("#b78f22", 'stroke-width="7"') + "/>" +
   '<path d="M64 66 L72 58 M70 72 L78 64" ' + S("#b78f22", 'stroke-width="6"') + "/>"
+);
+
+D.armchair = wrap(
+  // poltrona de lugar único: costas alta e estreita, assento, 2 braços redondos, pernas curtas
+  '<rect x="30" y="16" width="40" height="42" rx="10" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<rect x="16" y="40" width="68" height="24" rx="8" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="22" cy="50" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="78" cy="50" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<path d="M26 64 L26 76 M74 64 L74 76" ' + S("#5f3f8c", 'stroke-width="6"') + "/>" +
+  '<path d="M40 26 Q50 22 60 26" ' + S("#5f3f8c", 'stroke-width="2.5" stroke-opacity="0.5"') + "/>"
+);
+
+D.fireplace = wrap(
+  // lareira de tijolo: moldura retangular grossa com linhas de tijolo +
+  // abertura arredondada clara + chama grande e bem visível dentro
+  '<rect x="14" y="14" width="72" height="68" rx="6" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<path d="M24 24 h52 M24 34 h52 M24 44 h10 M40 44 h10 M56 44 h10 M72 44 h4" stroke="#6d4423" stroke-width="2" stroke-opacity="0.5"/>' +
+  '<path d="M28 82 L28 60 Q28 30 50 30 Q72 30 72 60 L72 82 Z" ' + F("#e8c79b", "#6d4423", 'stroke-width="4"') + "/>" +
+  '<path d="M50 74 Q38 62 48 44 Q50 52 56 50 Q62 44 58 34 Q72 46 66 62 Q62 74 50 74 Z" ' + F("#e94f4f", "#96302f", 'stroke-width="3"') + "/>" +
+  '<path d="M50 68 Q44 60 50 48 Q54 56 52 62 Q58 58 56 66 Q54 72 50 68 Z" ' + F("#f2c94c", "#b78f22", 'stroke-width="2.5"') + "/>"
+);
+
+D.radio = wrap(
+  // rádio retro: caixa retangular, altifalante redondo com grelha, antena reta inclinada, botão
+  '<rect x="14" y="30" width="72" height="48" rx="8" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<circle cx="38" cy="54" r="18" fill="#96302f" fill-opacity="0.25" stroke="#96302f" stroke-width="4"/>' +
+  '<path d="M28 46 h20 M28 54 h20 M28 62 h20" stroke="#96302f" stroke-width="2.5" stroke-opacity="0.7"/>' +
+  '<circle cx="70" cy="54" r="6" ' + F("#f2c94c", "#b78f22", 'stroke-width="3"') + "/>" +
+  '<path d="M68 30 L78 10" ' + S("#96302f", 'stroke-width="4"') + "/>"
 );
 
 /* ---- casa de banho -------------------------------------------------- */
@@ -637,6 +756,57 @@ D.toilet_paper = wrap(
   '<path d="M28 42 L28 58 M38 44 L38 60 M62 44 L62 60 M72 42 L72 58" ' + S("#b7ac95", 'stroke-width="2" stroke-opacity="0.5"') + "/>"
 );
 
+D.bubbles = wrap(
+  // varinha de bolinhas (aro em pau) + bolhas flutuantes de vários tamanhos
+  '<path d="M22 90 L34 66" ' + S("#5b8fd6", 'stroke-width="6"') + "/>" +
+  '<circle cx="38" cy="52" r="18" fill="#dbe7fb" fill-opacity="0.35" stroke="#5b8fd6" stroke-width="4"/>' +
+  '<path d="M32 46 Q36 42 41 45" ' + S("#ffffff", 'stroke-width="2.5" stroke-opacity="0.8"') + "/>" +
+  '<circle cx="70" cy="30" r="12" fill="#dbe7fb" fill-opacity="0.35" stroke="#5b8fd6" stroke-width="3.5"/>' +
+  '<path d="M65 26 Q68 23 72 25" ' + S("#ffffff", 'stroke-width="2" stroke-opacity="0.8"') + "/>" +
+  '<circle cx="78" cy="58" r="8" fill="#dbe7fb" fill-opacity="0.35" stroke="#5b8fd6" stroke-width="3"/>' +
+  '<circle cx="60" cy="72" r="6" fill="#dbe7fb" fill-opacity="0.35" stroke="#5b8fd6" stroke-width="2.5"/>' +
+  '<circle cx="86" cy="80" r="4.5" fill="#dbe7fb" fill-opacity="0.35" stroke="#5b8fd6" stroke-width="2.5"/>'
+);
+
+D.bathrobe = wrap(
+  // roupão comprido (até ao fundo do viewBox): abertura em V profundo com
+  // as 2 bandas do peito sobrepostas (linha diagonal visível a meio),
+  // mangas largas, cinto horizontal na cintura com nó e pontas a cair
+  '<path d="M36 10 L50 30 L64 10 L78 20 L70 46 L70 94 L30 94 L30 46 L22 20 Z" ' + F("#8fc1ee", "#5b8fd6") + "/>" +
+  '<path d="M30 46 L10 38 L16 62 L30 56 Z" ' + F("#8fc1ee", "#5b8fd6", 'stroke-width="3.5"') + "/>" +
+  '<path d="M70 46 L90 38 L84 62 L70 56 Z" ' + F("#8fc1ee", "#5b8fd6", 'stroke-width="3.5"') + "/>" +
+  '<path d="M50 30 L34 94" ' + S("#5b8fd6", 'stroke-width="3.5" stroke-opacity="0.8"') + "/>" +
+  '<path d="M28 64 L72 64" ' + S("#2c4f9e", 'stroke-width="7"') + "/>" +
+  '<path d="M46 64 Q50 60 54 64 Q58 68 54 70 Q50 73 46 70 Q42 68 46 64 Z" ' + F("#2c4f9e", "#1c3568", 'stroke-width="2.5"') + "/>" +
+  '<path d="M48 70 Q44 80 40 88 M52 70 Q56 80 58 90" ' + S("#2c4f9e", 'stroke-width="5"') + "/>"
+);
+
+D.sponge = wrap(
+  // esponja arredondada com buracos irregulares + algumas bolhas por cima
+  '<path d="M18 40 Q14 30 26 26 Q30 18 42 22 Q52 14 64 22 Q78 20 80 32 Q88 38 80 48 Q84 60 70 64 Q64 74 50 70 Q36 78 26 68 Q14 66 16 54 Q10 46 18 40 Z" ' + F("#f2c94c", "#b78f22") + "/>" +
+  '<circle cx="34" cy="38" r="4" fill="#b78f22" fill-opacity="0.5"/>' +
+  '<circle cx="52" cy="46" r="5" fill="#b78f22" fill-opacity="0.5"/>' +
+  '<circle cx="66" cy="36" r="3.5" fill="#b78f22" fill-opacity="0.5"/>' +
+  '<circle cx="44" cy="58" r="4" fill="#b78f22" fill-opacity="0.5"/>' +
+  '<circle cx="80" cy="18" r="7" fill="#dbe7fb" fill-opacity="0.4" stroke="#5b8fd6" stroke-width="3"/>' +
+  '<circle cx="66" cy="10" r="4" fill="#dbe7fb" fill-opacity="0.4" stroke="#5b8fd6" stroke-width="2.5"/>'
+);
+
+D.toothpaste = wrap(
+  // tubo de pasta de dentes deitado na diagonal: corpo comprido e achatado,
+  // ponta traseira espalmada com vinco em zigzag, tampa pequena à frente,
+  // onda de pasta azul/branca a sair da abertura
+  '<g transform="rotate(-28 50 50)">' +
+  '<path d="M14 40 L70 38 Q76 38 76 44 L76 56 Q76 62 70 62 L14 60 Q6 58 6 50 Q6 42 14 40 Z" ' + F("#4f7fe9", "#2c4f9e") + "/>" +
+  '<path d="M8 42 L20 46 L8 50 L20 54 L8 58" fill="none" stroke="#2c4f9e" stroke-width="3.5"/>' +
+  '<rect x="76" y="40" width="14" height="20" rx="3" ' + F("#8b97a6", "#5c6b7a") + "/>" +
+  '<rect x="90" y="44" width="7" height="12" rx="2" ' + F("#5c6b7a", "#3d4750") + "/>" +
+  '<path d="M40 44 h20 M40 56 h20" stroke="#dbe7fb" stroke-width="2.5" stroke-opacity="0.7"/>' +
+  "</g>" +
+  '<path d="M64 22 Q76 14 84 20 Q90 25 82 28 Q94 30 90 38 Q86 44 76 38 Q66 34 64 22 Z" ' + F("#8fc1ee", "#5b8fd6", 'stroke-width="3"') + "/>" +
+  '<path d="M70 24 Q78 22 82 27" ' + S("#ffffff", 'stroke-width="2.5" stroke-opacity="0.8"') + "/>"
+);
+
 D.mirror = wrap(
   '<ellipse cx="50" cy="42" rx="32" ry="36" ' + F("#8fc1ee", "#5b8fd6", 'stroke-width="8"') + "/>" +
   '<ellipse cx="50" cy="42" rx="24" ry="28" fill="#dbe7fb" fill-opacity="0.85" stroke="#5b8fd6" stroke-width="2.5"/>' +
@@ -696,6 +866,18 @@ D.candle = wrap(
   '<path d="M50 38 L50 24" ' + S("#4a4344", 'stroke-width="3.5"') + "/>" +
   '<path d="M50 10 Q40 20 46 30 Q50 34 54 30 Q60 20 50 10 Z" ' + F("#f2c94c", "#b78f22", 'stroke-width="3"') + "/>" +
   '<path d="M50 16 Q46 22 49 27" ' + S("#e94f4f", 'stroke-width="2.5" stroke-opacity="0.7"') + "/>"
+);
+
+D.watermelon = wrap(
+  // fatia (cunha) de melancia: casca verde, linha branca, polpa vermelha, sementes escuras
+  '<path d="M14 20 Q50 4 86 20 Q76 70 50 92 Q24 70 14 20 Z" ' + F("#5fbb63", "#37743a") + "/>" +
+  '<path d="M20 24 Q50 10 80 24 Q71 66 50 86 Q29 66 20 24 Z" fill="#f7f3e8" fill-opacity="0.9" stroke="#37743a" stroke-width="3"/>' +
+  '<path d="M25 28 Q50 16 75 28 Q67 62 50 80 Q33 62 25 28 Z" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<ellipse cx="42" cy="42" rx="2.6" ry="4" fill="#2c1810" transform="rotate(-20 42 42)"/>' +
+  '<ellipse cx="58" cy="42" rx="2.6" ry="4" fill="#2c1810" transform="rotate(20 58 42)"/>' +
+  '<ellipse cx="50" cy="58" rx="2.6" ry="4" fill="#2c1810"/>' +
+  '<ellipse cx="38" cy="60" rx="2.6" ry="4" fill="#2c1810" transform="rotate(-15 38 60)"/>' +
+  '<ellipse cx="62" cy="60" rx="2.6" ry="4" fill="#2c1810" transform="rotate(15 62 60)"/>'
 );
 
 /* ---- parque ---------------------------------------------------------- */
@@ -783,6 +965,24 @@ D.bird = wrap(
   '<circle cx="63" cy="38" r="4" fill="#1c2740"/>' +
   '<circle cx="64.3" cy="36.7" r="1.4" fill="#fff"/>' +
   '<path d="M78 40 L90 44 L78 48 Z" ' + F("#f2c94c", "#b78f22") + "/>"
+);
+
+D.ladybug = wrap(
+  // joaninha amigável: corpo redondo vermelho com carapaça dividida ao meio,
+  // pintas pretas, cabeça pequena preta com olhos, antenas
+  '<ellipse cx="50" cy="90" rx="22" ry="5" fill="#000" fill-opacity="0.08"/>' +
+  '<circle cx="50" cy="56" r="30" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<path d="M50 26 L50 86" ' + S("#96302f", 'stroke-width="3.5"') + "/>" +
+  '<circle cx="38" cy="46" r="4.5" fill="#231f20"/>' +
+  '<circle cx="62" cy="46" r="4.5" fill="#231f20"/>' +
+  '<circle cx="40" cy="66" r="4.5" fill="#231f20"/>' +
+  '<circle cx="60" cy="66" r="4.5" fill="#231f20"/>' +
+  '<circle cx="50" cy="76" r="4.5" fill="#231f20"/>' +
+  '<path d="M32 28 Q50 16 68 28 Q68 34 50 30 Q32 34 32 28 Z" ' + F("#231f20", "#000000", 'stroke-width="3"') + "/>" +
+  '<circle cx="44" cy="24" r="4" fill="#231f20"/><circle cx="56" cy="24" r="4" fill="#231f20"/>' +
+  '<circle cx="45.3" cy="22.6" r="1.4" fill="#fff"/><circle cx="57.3" cy="22.6" r="1.4" fill="#fff"/>' +
+  '<path d="M40 14 Q36 6 30 4 M60 14 Q64 6 70 4" ' + S("#231f20", 'stroke-width="3"') + "/>" +
+  '<circle cx="30" cy="4" r="2.4" fill="#231f20"/><circle cx="70" cy="4" r="2.4" fill="#231f20"/>'
 );
 
 D.butterfly = wrap(
@@ -920,6 +1120,19 @@ D.traffic_light = wrap(
 
 /* ---- escola (extra) -------------------------------------------------- */
 
+D.helicopter = wrap(
+  // helicóptero de perfil: corpo oval + cauda estreita + barra do rotor
+  // principal em cima + rotor de cauda + 2 patins retos em baixo
+  '<path d="M16 56 Q16 38 40 36 L58 36 Q78 36 78 50 Q78 60 64 62 L30 62 Q16 62 16 56 Z" ' + F("#4f7fe9", "#2c4f9e") + "/>" +
+  '<path d="M78 46 L94 42 L94 48 L78 52 Z" ' + F("#2c4f9e", "#2c4f9e") + "/>" +
+  '<path d="M90 34 L90 56" ' + S("#2c4f9e", 'stroke-width="3.5"') + "/>" +
+  '<ellipse cx="42" cy="50" rx="16" ry="12" fill="#cfe6f7" fill-opacity="0.9" stroke="#2c4f9e" stroke-width="3"/>' +
+  '<path d="M46 36 L46 20" ' + S("#2c4f9e", 'stroke-width="4"') + "/>" +
+  '<path d="M14 20 L78 20" ' + S("#5b8fd6", 'stroke-width="5"') + "/>" +
+  '<path d="M22 62 L18 78 M70 62 L66 78" ' + S("#2c4f9e", 'stroke-width="5"') + "/>" +
+  '<path d="M14 78 L74 78" ' + S("#2c4f9e", 'stroke-width="5"') + "/>"
+);
+
 D.glue = wrap(
   // frasco de cola laranja: corpo, ombro estreitando, gargalo, tampa/bico cónico
   '<path d="M28 40 L28 82 Q28 88 34 88 L66 88 Q72 88 72 82 L72 40 Q72 30 60 26 L60 20 L40 20 L40 26 Q28 30 28 40 Z" ' + F("#f2994a", "#b5622a") + "/>" +
@@ -947,6 +1160,20 @@ D.paint = wrap(
   '<path d="M70 46 L78 46 L76 60 Q74 64 70 60 Z" ' + F("#8b97a6", "#5c6b7a", 'stroke-width="2.5"') + "/>" +
   '<path d="M70 60 Q68 68 71 74 Q74 68 74 62 Q77 68 74 74" ' + F("#e94f4f", "#96302f", 'stroke-width="2.5"') + "/>" +
   "</g>"
+);
+
+D.globe = wrap(
+  // globo de secretária: esfera inclinada com continentes verdes + eixo + suporte em forma de arco + base
+  '<ellipse cx="50" cy="86" rx="22" ry="5" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<path d="M32 82 L38 60 M68 82 L62 60" ' + S("#a76b3d", 'stroke-width="6"') + "/>" +
+  '<path d="M30 62 Q50 70 70 62" ' + S("#6d4423", 'stroke-width="5"') + "/>" +
+  '<circle cx="50" cy="40" r="32" ' + F("#4f7fe9", "#2c4f9e") + "/>" +
+  '<path d="M18 40 L82 40" ' + S("#2c4f9e", 'stroke-width="2.5" stroke-opacity="0.6"') + "/>" +
+  '<path d="M50 8 Q34 24 34 40 Q34 56 50 72" fill="none" stroke="#2c4f9e" stroke-width="2.5" stroke-opacity="0.6"/>' +
+  '<path d="M28 26 Q38 22 42 30 Q34 34 28 26 Z" ' + F("#5fbb63", "#37743a", 'stroke-width="2.5"') + "/>" +
+  '<path d="M56 20 Q68 18 70 28 Q60 30 56 20 Z" ' + F("#5fbb63", "#37743a", 'stroke-width="2.5"') + "/>" +
+  '<path d="M40 48 Q52 44 60 52 Q50 58 40 48 Z" ' + F("#5fbb63", "#37743a", 'stroke-width="2.5"') + "/>" +
+  '<path d="M25 12 L34 8" ' + S("#2c4f9e", 'stroke-width="5"') + "/>"
 );
 
 /* ---- corpo ------------------------------------------------------- */
@@ -981,6 +1208,17 @@ D.foot = wrap(
   // plana, calcanhar redondo à direita — UM único path fechado
   '<path d="M60 10 L56 42 Q42 46 30 56 Q20 64 19 71 Q19 77 25 78 Q29 81 33 78 Q37 81 42 78 L72 78 Q84 78 84 64 Q84 52 78 44 L76 10 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
   '<path d="M34 62 q14 -6 30 -2" ' + S("#c9a97a", 'stroke-width="3" stroke-opacity="0.5"') + "/>"
+);
+
+D.neck = wrap(
+  // cabeça de perfil (silhueta única) + ombros, com o pescoço destacado por
+  // uma banda larga de tom mais escuro e vincos horizontais
+  '<path d="M40 8 Q64 8 66 28 Q78 32 74 42 Q72 48 66 46 Q64 56 54 58 L54 68 Q54 74 60 76 L84 84 Q90 86 90 90 L10 90 Q10 86 16 84 L40 76 Q46 74 46 68 L46 58 Q34 54 30 42 Q26 30 32 20 Q34 10 40 8 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M43 56 Q50 64 57 56 L57 76 Q50 80 43 76 Z" fill="#dbb586" fill-opacity="0.95" stroke="#a3835c" stroke-width="3"/>' +
+  '<path d="M44 62 Q50 65 56 62 M44 68 Q50 71 56 68 M44 74 Q50 77 56 74" ' + S("#a3835c", 'stroke-width="2"') + "/>" +
+  '<circle cx="41" cy="30" r="3.6" fill="#4a2a3a"/>' +
+  '<path d="M34 42 Q40 47 47 44" ' + S("#96302f", 'stroke-width="3"') + "/>" +
+  '<circle cx="30" cy="38" r="4" fill="#f27fb2" fill-opacity="0.5"/>'
 );
 
 D.eye = wrap(
@@ -1582,19 +1820,347 @@ D.dolphin = wrap(
   '<circle cx="18" cy="12" r="2.6" fill="#8fc1ee" fill-opacity="0.7" stroke="#5b8fd6" stroke-width="2"/>'
 );
 
+D.sandcastle = wrap(
+  // castelo de areia: corpo em forma de balde invertido + 2 torres com
+  // ameias (crenelação) + pequena bandeira num dos lados
+  '<path d="M22 90 L26 56 Q26 52 30 52 L70 52 Q74 52 74 56 L78 90 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M30 62 h40 M28 74 h44" ' + S("#a3835c", 'stroke-width="2.5" stroke-opacity="0.5"') + "/>" +
+  '<rect x="14" y="34" width="18" height="24" rx="2" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M14 34 v-8 h5 v6 h4 v-6 h5 v6 h4 v-6 h5 v8 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<rect x="68" y="34" width="18" height="24" rx="2" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M68 34 v-8 h5 v6 h4 v-6 h5 v6 h4 v-6 h5 v8 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M50 34 L50 20" ' + S("#a3835c", 'stroke-width="3"') + "/>" +
+  '<path d="M50 20 L64 26 L50 32 Z" ' + F("#e94f4f", "#96302f", 'stroke-width="2.5"') + "/>"
+);
+
+D.belt = wrap(
+  // cinto reto na horizontal: tira longa + fivela dourada grande + ponta com furos
+  '<rect x="8" y="42" width="60" height="16" rx="6" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<circle cx="16" cy="50" r="2.4" fill="#6d4423"/>' +
+  '<circle cx="26" cy="50" r="2.4" fill="#6d4423"/>' +
+  '<circle cx="36" cy="50" r="2.4" fill="#6d4423"/>' +
+  '<rect x="60" y="30" width="34" height="40" rx="8" ' + F("#f2c94c", "#b78f22", 'stroke-width="4"') + "/>" +
+  '<rect x="70" y="40" width="14" height="20" rx="3" fill="none" stroke="#b78f22" stroke-width="4"/>' +
+  '<path d="M68 46 L60 46" ' + S("#b78f22", 'stroke-width="6"') + "/>"
+);
+
+/* ---- comida (lote B) ---------------------------------------------- */
+
+D.grapes = wrap(
+  // cacho de uvas roxas: várias bolas sobrepostas em triângulo + caule + folha
+  '<path d="M46 10 L46 22" ' + S("#37743a", 'stroke-width="4"') + "/>" +
+  '<path d="M46 14 Q60 8 66 20 Q56 24 46 18 Z" ' + F("#5fbb63", "#37743a", 'stroke-width="3"') + "/>" +
+  '<circle cx="46" cy="30" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="32" cy="40" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="60" cy="40" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="24" cy="56" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="46" cy="56" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="68" cy="56" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="35" cy="72" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="57" cy="72" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="46" cy="86" r="11" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="29" cy="26" r="3" fill="#ffffff" fill-opacity="0.5"/>' +
+  '<circle cx="55" cy="36" r="3" fill="#ffffff" fill-opacity="0.5"/>'
+);
+
+D.lemon = wrap(
+  // limão inteiro: oval com pontas salientes nos 2 extremos + folha
+  '<path d="M50 10 Q34 12 26 30 Q18 48 26 66 Q34 88 50 90 Q66 88 74 66 Q82 48 74 30 Q66 12 50 10 Z" ' + F("#f2c94c", "#b78f22") + "/>" +
+  '<path d="M50 10 Q47 6 50 2 Q53 6 50 10 Z" ' + F("#b78f22", "#6d4423", 'stroke-width="2.5"') + "/>" +
+  '<path d="M50 90 Q47 94 50 98 Q53 94 50 90 Z" ' + F("#b78f22", "#6d4423", 'stroke-width="2.5"') + "/>" +
+  '<path d="M62 16 Q70 22 66 30" ' + S("#5fbb63", 'stroke-width="5"') + "/>" +
+  '<path d="M36 30 Q40 46 38 62" ' + S("#ffffff", 'stroke-width="3" stroke-opacity="0.6"') + "/>"
+);
+
+D.cereal = wrap(
+  // tigela com aros de cereais + colher + salpico de leite
+  '<path d="M14 50 Q14 78 50 82 Q86 78 86 50 Z" ' + F("#f2994a", "#b5622a") + "/>" +
+  '<ellipse cx="50" cy="50" rx="36" ry="12" ' + F("#f7f3e8", "#b7ac95") + "/>" +
+  '<circle cx="34" cy="48" r="6" fill="none" stroke="#b5622a" stroke-width="4"/>' +
+  '<circle cx="50" cy="44" r="6" fill="none" stroke="#b5622a" stroke-width="4"/>' +
+  '<circle cx="64" cy="49" r="6" fill="none" stroke="#b5622a" stroke-width="4"/>' +
+  '<circle cx="42" cy="55" r="5" fill="none" stroke="#b5622a" stroke-width="3.5"/>' +
+  '<circle cx="58" cy="56" r="5" fill="none" stroke="#b5622a" stroke-width="3.5"/>' +
+  '<g transform="rotate(20 84 24)">' +
+  '<ellipse cx="84" cy="20" rx="7" ry="10" ' + F("#8b97a6", "#5c6b7a") + "/>" +
+  '<rect x="81" y="28" width="6" height="26" rx="3" ' + F("#8b97a6", "#5c6b7a", 'stroke-width="3"') + "/>" +
+  "</g>" +
+  '<path d="M20 30 Q24 22 32 24" ' + S("#8fc1ee", 'stroke-width="3" stroke-opacity="0.7"') + "/>"
+);
+
+/* ---- parque (lote B) ------------------------------------------------ */
+
+D.squirrel = wrap(
+  // esquilo mascote: cabeça grande, cauda fofa enrolada por trás como
+  // elemento chave, corpinho pequeno sentado, noz opcional
+  '<ellipse cx="50" cy="92" rx="24" ry="6" fill="#000" fill-opacity="0.06"/>' +
+  // cauda grande e curva, atrás da cabeça/corpo
+  '<path d="M62 70 Q94 66 92 34 Q90 8 62 10 Q80 16 80 36 Q80 54 58 60 Z" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<path d="M70 22 Q80 24 80 36" ' + S("#6d4423", 'stroke-width="2.5" stroke-opacity="0.5"') + "/>" +
+  // orelhas
+  '<path d="M32 26 Q28 14 38 16 Q40 24 34 30 Z" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<path d="M58 26 Q60 14 50 16 Q48 24 54 30 Z" ' + F("#c98a52", "#6d4423") + "/>" +
+  // cabeça
+  '<circle cx="46" cy="42" r="22" ' + F("#c98a52", "#6d4423") + "/>" +
+  // focinho
+  '<ellipse cx="46" cy="50" rx="11" ry="8" fill="#e8c79b" fill-opacity="0.95" stroke="#6d4423" stroke-width="3"/>' +
+  '<circle cx="46" cy="48" r="2.6" fill="#4a2a2a"/>' +
+  '<path d="M46 51 Q41 55 37 52 M46 51 Q51 55 55 52" ' + S("#4a2a2a", 'stroke-width="2.2"') + "/>" +
+  '<circle cx="37" cy="36" r="4" fill="#3a2a1a"/><circle cx="55" cy="36" r="4" fill="#3a2a1a"/>' +
+  '<circle cx="38.4" cy="34.6" r="1.4" fill="#fff"/><circle cx="56.4" cy="34.6" r="1.4" fill="#fff"/>' +
+  // corpinho sentado
+  '<ellipse cx="42" cy="72" rx="18" ry="16" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<ellipse cx="42" cy="76" rx="9" ry="8" fill="#e8c79b" fill-opacity="0.95" stroke="#6d4423" stroke-width="2.5"/>'
+);
+
+D.bench = wrap(
+  // banco de jardim de frente: encosto com 2 ripas (mais acima), assento
+  // com 2-3 ripas, e DUAS PERNAS verticais bem grossas e separadas a
+  // chegar claramente ao chão — as pernas são o elemento chave
+  '<rect x="26" y="14" width="48" height="9" rx="3" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<rect x="26" y="28" width="48" height="9" rx="3" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<rect x="10" y="46" width="80" height="10" rx="3" ' + F("#c98a52", "#6d4423") + "/>" +
+  '<rect x="10" y="60" width="80" height="10" rx="3" ' + F("#c98a52", "#6d4423") + "/>" +
+  // pernas: 2 pares grossos e bem visíveis até ao chão
+  '<rect x="14" y="68" width="9" height="24" rx="3" ' + F("#6d4423", "#4a2e18") + "/>" +
+  '<rect x="34" y="68" width="9" height="24" rx="3" ' + F("#6d4423", "#4a2e18") + "/>" +
+  '<rect x="58" y="68" width="9" height="24" rx="3" ' + F("#6d4423", "#4a2e18") + "/>" +
+  '<rect x="78" y="68" width="9" height="24" rx="3" ' + F("#6d4423", "#4a2e18") + "/>" +
+  '<path d="M10 92 L90 92" ' + S("#4a2e18", 'stroke-width="4"') + "/>"
+);
+
+D.seesaw = wrap(
+  // balancé: pivô triangular ao centro + prancha inclinada com pega em cada ponta
+  '<path d="M36 88 L50 54 L64 88 Z" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<path d="M14 74 L86 32" ' + S("#e94f4f", 'stroke-width="9"') + "/>" +
+  '<circle cx="50" cy="53" r="5" ' + F("#f2c94c", "#b78f22", 'stroke-width="3"') + "/>" +
+  '<path d="M14 74 L14 64" ' + S("#96302f", 'stroke-width="5"') + "/>" +
+  '<path d="M86 32 L86 22" ' + S("#96302f", 'stroke-width="5"') + "/>"
+);
+
+/* ---- carro (lote B) -------------------------------------------------- */
+
+D.ambulance = wrap(
+  // van branca com cruz vermelha e luz no tejadilho
+  '<path d="M12 62 L14 44 Q15 38 22 38 L64 38 L64 30 Q64 26 68 26 L78 26 Q82 26 82 30 L82 44 L86 44 Q90 44 90 50 L90 62 Z" ' + F("#f7f3e8", "#b7ac95") + "/>" +
+  '<rect x="18" y="42" width="18" height="12" rx="2" fill="#cfe6f7" fill-opacity="0.9" stroke="#b7ac95" stroke-width="2.5"/>' +
+  '<rect x="70" y="30" width="10" height="12" rx="2" fill="#cfe6f7" fill-opacity="0.9" stroke="#b7ac95" stroke-width="2.5"/>' +
+  '<path d="M46 44 h16 M54 36 v16" ' + S("#e94f4f", 'stroke-width="6"') + "/>" +
+  '<rect x="42" y="16" width="16" height="8" rx="2" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<circle cx="30" cy="64" r="9" ' + F("#4a4344", "#231f20") + "/>" +
+  '<circle cx="76" cy="64" r="9" ' + F("#4a4344", "#231f20") + "/>" +
+  '<circle cx="30" cy="64" r="3.5" fill="#f7f3e8"/>' +
+  '<circle cx="76" cy="64" r="3.5" fill="#f7f3e8"/>'
+);
+
+D.fire_truck = wrap(
+  // camião vermelho com escada no tejadilho
+  '<path d="M12 62 L16 46 Q18 40 25 40 L38 40 L46 30 Q48 28 52 28 L64 28 Q68 28 70 32 L76 42 L82 44 Q86 46 86 50 L86 62 Z" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<path d="M48 31 L44 40 L57 40 L57 31 Z" fill="#cfe6f7" fill-opacity="0.9" stroke="#96302f" stroke-width="3"/>' +
+  '<path d="M60 31 L60 40 L69 40 L65 32 Z" fill="#cfe6f7" fill-opacity="0.9" stroke="#96302f" stroke-width="3"/>' +
+  '<path d="M20 26 L80 20" ' + S("#8b97a6", 'stroke-width="5"') + "/>" +
+  '<path d="M26 26 L28 20 M38 25 L40 19 M50 23 L52 17 M62 22 L64 16 M74 21 L76 15" ' + S("#8b97a6", 'stroke-width="3"') + "/>" +
+  '<circle cx="28" cy="64" r="9" ' + F("#4a4344", "#231f20") + "/>" +
+  '<circle cx="72" cy="64" r="9" ' + F("#4a4344", "#231f20") + "/>" +
+  '<circle cx="28" cy="64" r="3.5" fill="#f7f3e8"/>' +
+  '<circle cx="72" cy="64" r="3.5" fill="#f7f3e8"/>'
+);
+
+D.police_car = wrap(
+  // carro azul/branco com barra de luzes no tejadilho
+  '<path d="M14 62 L18 48 Q20 42 27 42 L40 42 L48 32 Q50 30 54 30 L66 30 Q70 30 72 34 L78 44 L84 46 Q88 48 88 52 L88 62 Z" ' + F("#4f7fe9", "#2c4f9e") + "/>" +
+  '<path d="M50 33 L45 42 L58 42 L58 33 Z" fill="#cfe6f7" fill-opacity="0.9" stroke="#2c4f9e" stroke-width="3"/>' +
+  '<path d="M62 33 L62 42 L71 42 L67 34 Z" fill="#cfe6f7" fill-opacity="0.9" stroke="#2c4f9e" stroke-width="3"/>' +
+  '<rect x="20" y="46" width="50" height="9" rx="2" fill="#f7f3e8" fill-opacity="0.9" stroke="#2c4f9e" stroke-width="2.5"/>' +
+  '<rect x="44" y="20" width="10" height="8" rx="2" ' + F("#e94f4f", "#96302f", 'stroke-width="2.5"') + "/>" +
+  '<rect x="54" y="20" width="10" height="8" rx="2" fill="#dbe7fb" fill-opacity="0.9" stroke="#2c4f9e" stroke-width="2.5"/>' +
+  '<circle cx="30" cy="64" r="9" ' + F("#4a4344", "#231f20") + "/>" +
+  '<circle cx="70" cy="64" r="9" ' + F("#4a4344", "#231f20") + "/>" +
+  '<circle cx="30" cy="64" r="3.5" fill="#f7f3e8"/>' +
+  '<circle cx="70" cy="64" r="3.5" fill="#f7f3e8"/>'
+);
+
+/* ---- corpo (lote B) --------------------------------------------------- */
+
+D.elbow = wrap(
+  // braço dobrado em L de perfil, mesma técnica do D.knee: ombro/braço
+  // horizontal a entrar pela esquerda, dobra no cotovelo, antebraço desce
+  // até um PUNHO FECHADO pequeno na base (dá o contexto anatómico que
+  // faltava) — UM único path fechado; cotovelo destacado no vértice por
+  // elipse mais escura + 2 vincos
+  '<path d="M4 18 Q4 6 16 6 L54 6 Q68 6 68 20 L68 46' +
+  ' Q80 48 80 60 L80 82 Q80 94 68 94 Q56 94 56 82' +
+  ' L56 58 Q56 48 46 46 L28 44 Q14 42 14 28 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<ellipse cx="60" cy="50" rx="13" ry="12" fill="#c9a97a" fill-opacity="0.9" stroke="#a3835c" stroke-width="4"/>' +
+  '<path d="M52 46 Q60 51 68 46" ' + S("#8a6c44", 'stroke-width="2.5" stroke-opacity="0.6"') + "/>" +
+  '<path d="M53 56 Q60 60 67 56" ' + S("#8a6c44", 'stroke-width="2.2" stroke-opacity="0.5"') + "/>" +
+  '<path d="M60 78 Q52 78 52 86 Q52 94 60 94 Q68 94 68 86" ' + S("#a3835c", 'stroke-width="2.5" stroke-opacity="0.5"') + "/>"
+);
+
+D.back = wrap(
+  // pessoa vista de costas: cabeça + tronco largo com vinco da coluna ao
+  // centro + ombros — silhueta única, sem cara
+  '<circle cx="50" cy="20" r="16" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M50 34 Q22 34 18 56 Q14 76 20 92 L80 92 Q86 76 82 56 Q78 34 50 34 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M50 40 L50 88" ' + S("#a3835c", 'stroke-width="3" stroke-opacity="0.55"') + "/>" +
+  '<path d="M32 50 Q50 56 68 50" ' + S("#a3835c", 'stroke-width="2.5" stroke-opacity="0.4"') + "/>" +
+  '<path d="M30 66 Q50 72 70 66" ' + S("#a3835c", 'stroke-width="2.5" stroke-opacity="0.35"') + "/>"
+);
+
+D.thumb = wrap(
+  // mão fechada com polegar levantado (like) — UM único path fechado,
+  // mesma técnica do D.hand: punho em baixo, punho fechado largo, polegar
+  // grande a apontar para cima e para fora
+  '<path d="M30 92 L28 66 Q26 58 34 54 Q30 46 36 40 L44 24' +
+  ' Q46 18 52 20 Q58 22 56 30 L50 44 L58 44 Q68 44 70 52' +
+  ' Q78 52 78 60 Q78 68 70 68 Q72 76 64 78 Q66 84 58 86 L38 92 Z" ' + F("#e8c79b", "#a3835c") + "/>" +
+  '<path d="M40 52 Q54 56 68 52" ' + S("#a3835c", 'stroke-width="2.5" stroke-opacity="0.45"') + "/>" +
+  '<path d="M46 30 L52 44" ' + S("#a3835c", 'stroke-width="2.2" stroke-opacity="0.4"') + "/>"
+);
+
+/* ---- escola (lote C) -------------------------------------------------- */
+
+D.chalk = wrap(
+  // pequena lousa preta com rabisco de giz + 3 paus de giz (branco, rosa,
+  // azul) deitados em baixo, bem separados e grandes para se lerem à
+  // primeira: a lousa dá o contexto, os paus dão o objeto
+  '<rect x="16" y="10" width="68" height="46" rx="5" ' + F("#231f20", "#000000", 'stroke-width="4"') + "/>" +
+  '<path d="M28 24 Q40 18 50 26 Q60 34 72 26" ' + S("#f7f3e8", 'stroke-width="4" stroke-opacity="0.85"') + "/>" +
+  '<path d="M32 42 Q42 46 52 40" ' + S("#f7f3e8", 'stroke-width="3.5" stroke-opacity="0.6"') + "/>" +
+  '<rect x="14" y="66" width="42" height="13" rx="6.5" ' + F("#f7f3e8", "#b7ac95") + "/>" +
+  '<rect x="20" y="80" width="42" height="13" rx="6.5" transform="rotate(4 41 86)" ' + F("#f27fb2", "#b04f7e") + "/>" +
+  '<rect x="46" y="64" width="40" height="13" rx="6.5" transform="rotate(-6 66 70)" ' + F("#4f7fe9", "#2c4f9e") + "/>"
+);
+
+D.map = wrap(
+  // mapa dobrado (retângulo com "vincos") + linha de rota tracejada +
+  // pin de localização por cima
+  '<rect x="12" y="16" width="76" height="60" rx="4" ' + F("#5fbb63", "#37743a") + "/>" +
+  '<path d="M32 16 L28 76 M64 16 L68 76" ' + S("#37743a", 'stroke-width="2.5" stroke-opacity="0.55"') + "/>" +
+  '<path d="M20 60 Q34 40 46 52 Q58 64 74 30" fill="none" stroke="#f7f3e8" stroke-width="4" stroke-opacity="0.85" stroke-dasharray="2 8"/>' +
+  '<path d="M66 22 Q66 10 76 10 Q86 10 86 22 Q86 32 76 42 Q66 32 66 22 Z" ' + F("#e94f4f", "#96302f", 'stroke-width="3.5"') + "/>" +
+  '<circle cx="76" cy="22" r="4.5" fill="#f7f3e8"/>'
+);
+
+D.abacus = wrap(
+  // ábaco: moldura de madeira retangular + 4 varões horizontais + contas
+  // coloridas deslizantes, algumas de cada lado para dar sensação de uso
+  '<rect x="14" y="12" width="72" height="76" rx="6" ' + F("#a76b3d", "#6d4423") + "/>" +
+  '<rect x="24" y="20" width="52" height="60" fill="#f7f3e8" fill-opacity="0.3" stroke="#6d4423" stroke-width="2.5"/>' +
+  '<path d="M24 32 L76 32" ' + S("#6d4423", 'stroke-width="3.5"') + "/>" +
+  '<path d="M24 48 L76 48" ' + S("#6d4423", 'stroke-width="3.5"') + "/>" +
+  '<path d="M24 64 L76 64" ' + S("#6d4423", 'stroke-width="3.5"') + "/>" +
+  '<circle cx="34" cy="32" r="6" ' + F("#e94f4f", "#96302f", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="48" cy="32" r="6" ' + F("#e94f4f", "#96302f", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="62" cy="32" r="6" ' + F("#e94f4f", "#96302f", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="40" cy="48" r="6" ' + F("#f2c94c", "#b78f22", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="54" cy="48" r="6" ' + F("#f2c94c", "#b78f22", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="68" cy="48" r="6" ' + F("#f2c94c", "#b78f22", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="32" cy="64" r="6" ' + F("#4f7fe9", "#2c4f9e", 'stroke-width="2.5"') + "/>" +
+  '<circle cx="46" cy="64" r="6" ' + F("#4f7fe9", "#2c4f9e", 'stroke-width="2.5"') + "/>"
+);
+
+/* ---- roupa (lote C) ---------------------------------------------------- */
+
+D.sweater = wrap(
+  // camisola de lã: silhueta como D.shirt mas com punhos e barra
+  // canelados (riscas verticais) + padrão de ziguezague no peito, para se
+  // distinguir claramente de shirt/jacket
+  '<path d="M36 14 L20 26 L28 42 L36 36 L36 88 L64 88 L64 36 L72 42 L80 26 L64 14 Q50 24 36 14 Z" ' + F("#e94f4f", "#96302f") + "/>" +
+  '<path d="M42 16 Q50 26 58 16" ' + S("#96302f", 'stroke-width="3.5"') + "/>" +
+  '<path d="M38 50 L46 42 L54 50 L62 42" fill="none" stroke="#96302f" stroke-width="3" stroke-opacity="0.65"/>' +
+  '<path d="M38 62 L46 54 L54 62 L62 54" fill="none" stroke="#96302f" stroke-width="3" stroke-opacity="0.65"/>' +
+  '<path d="M22 30 L21 40 M25 28 L24 40 M75 28 L76 40 M78 30 L79 40" ' + S("#96302f", 'stroke-width="2.5" stroke-opacity="0.6"') + "/>" +
+  '<path d="M36 78 L64 78" ' + S("#96302f", 'stroke-width="3" stroke-opacity="0.6"') + "/>" +
+  '<path d="M36 82 L64 82" ' + S("#96302f", 'stroke-width="3" stroke-opacity="0.6"') + "/>"
+);
+
+D.cap = wrap(
+  // boné de basebol de perfil, UM único contorno fechado: copa
+  // arredondada a subir da esquerda, topo com botão, a descer e a
+  // esticar-se numa pala fina e comprida a apontar para a direita —
+  // bem distinto do D.hat (aba redonda à volta de toda a copa)
+  '<path d="M14 58 Q10 18 50 16 Q86 18 84 54 L94 58 Q96 62 92 64 L84 62 Q60 68 30 64 Q18 62 14 58 Z" ' + F("#4f7fe9", "#2c4f9e") + "/>" +
+  '<circle cx="50" cy="19" r="3.2" fill="#2c4f9e"/>' +
+  '<path d="M26 54 Q50 46 78 54" ' + S("#2c4f9e", 'stroke-width="2.5" stroke-opacity="0.55"') + "/>" +
+  '<path d="M14 58 Q46 66 84 58" ' + S("#1c3670", 'stroke-width="4"') + "/>"
+);
+
+D.raincoat = wrap(
+  // capa de chuva amarela vista de frente, silhueta única: capuz pontudo
+  // no topo + corpo em A largo até aos pés + mangas curtas de cada lado
+  // + fecho central + gotas de chuva à volta para o contexto
+  '<path d="M50 6 Q30 8 26 26 L36 24 L34 40 Q14 44 12 62 L28 66 Q30 50 40 46 Q34 66 30 90 L70 90 Q66 66 60 46 Q70 50 72 66 L88 62 Q86 44 66 40 L64 24 L62 26 Q58 8 50 6 Z" ' + F("#f2c94c", "#b78f22") + "/>" +
+  '<path d="M50 6 Q38 8 36 22 Q44 28 50 22 Q56 28 64 22 Q62 8 50 6 Z" ' + F("#f2c94c", "#b78f22", 'stroke-width="3.5"') + "/>" +
+  '<path d="M50 30 L50 84" ' + S("#b78f22", 'stroke-width="3"') + "/>" +
+  '<circle cx="50" cy="40" r="2.4" fill="#b78f22"/><circle cx="50" cy="52" r="2.4" fill="#b78f22"/><circle cx="50" cy="64" r="2.4" fill="#b78f22"/>' +
+  '<path d="M8 20 Q6 26 8 32" ' + S("#5b8fd6", 'stroke-width="4"') + "/>" +
+  '<path d="M92 20 Q90 26 92 32" ' + S("#5b8fd6", 'stroke-width="4"') + "/>" +
+  '<path d="M4 50 Q2 56 4 62" ' + S("#5b8fd6", 'stroke-width="4"') + "/>" +
+  '<path d="M96 50 Q94 56 96 62" ' + S("#5b8fd6", 'stroke-width="4"') + "/>"
+);
+
+/* ---- praia (lote C) ---------------------------------------------------- */
+
+D.seagull = wrap(
+  // gaivota branca de pé, ao estilo mascote do D.bird: corpo redondo,
+  // asa cinzenta pousada mais para trás/baixo (não sobre a cara), bico
+  // amarelo triangular, patas de palito — cores frias para não se
+  // confundir com o D.bird azul
+  '<path d="M42 78 L42 88 M58 78 L58 88 M38 88 L46 88 M54 88 L62 88" ' + S("#b78f22", 'stroke-width="3.5"') + "/>" +
+  '<circle cx="50" cy="46" r="26" ' + F("#f7f3e8", "#b7ac95") + "/>" +
+  '<path d="M40 58 Q30 60 30 70 Q30 78 40 74 Q46 70 45 60 Z" ' + F("#8b97a6", "#5c6b7a") + "/>" +
+  '<circle cx="63" cy="38" r="4" fill="#1c2740"/>' +
+  '<circle cx="64.3" cy="36.7" r="1.4" fill="#fff"/>' +
+  '<path d="M78 40 L90 44 L78 48 Z" ' + F("#f2c94c", "#b78f22") + "/>"
+);
+
+D.flip_flops = wrap(
+  // par de chinelos de dedo vistos de cima: 2 solas ovais lado a lado,
+  // cada uma com uma tira em V curta a sair de perto da ponta dianteira
+  // até um ponto entre os dedos perto da base — o V fica só no terço da
+  // frente da sola, não a atravessá-la toda
+  '<ellipse cx="30" cy="54" rx="19" ry="36" ' + F("#f27fb2", "#b04f7e") + "/>" +
+  '<path d="M30 70 L18 34 M30 70 L42 34" ' + S("#b04f7e", 'stroke-width="5"') + "/>" +
+  '<circle cx="30" cy="70" r="3.2" fill="#b04f7e"/>' +
+  '<ellipse cx="70" cy="54" rx="19" ry="36" ' + F("#4f7fe9", "#2c4f9e") + "/>" +
+  '<path d="M70 70 L58 34 M70 70 L82 34" ' + S("#2c4f9e", 'stroke-width="5"') + "/>" +
+  '<circle cx="70" cy="70" r="3.2" fill="#2c4f9e"/>'
+);
+
+D.octopus = wrap(
+  // polvo mascote roxo simpático: cabeça redonda com cara + 6-8 pernas
+  // onduladas curtas a sair da base, como uma franja — silhueta única
+  // fechada por perna, olhos grandes tipo mascote
+  '<path d="M20 66 Q14 78 20 84 Q26 88 28 78 Q30 88 36 84 Q40 80 36 68" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<path d="M36 68 Q34 80 40 86 Q46 90 46 80 Q48 90 54 86 Q58 82 54 68" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<path d="M54 68 Q52 80 58 86 Q64 90 64 80 Q66 90 72 86 Q76 82 72 68" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<path d="M72 68 Q70 78 76 84 Q82 88 80 78 Q86 84 90 78 Q92 70 84 64" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="50" cy="44" r="32" ' + F("#9b6dd6", "#5f3f8c") + "/>" +
+  '<circle cx="38" cy="40" r="8" fill="#f7f3e8" fill-opacity="0.95" stroke="#5f3f8c" stroke-width="2.5"/>' +
+  '<circle cx="62" cy="40" r="8" fill="#f7f3e8" fill-opacity="0.95" stroke="#5f3f8c" stroke-width="2.5"/>' +
+  '<circle cx="39" cy="41" r="4" fill="#4a2a3a"/><circle cx="63" cy="41" r="4" fill="#4a2a3a"/>' +
+  '<circle cx="40.5" cy="39.3" r="1.4" fill="#fff"/><circle cx="64.5" cy="39.3" r="1.4" fill="#fff"/>' +
+  '<path d="M42 58 Q50 64 58 58" ' + S("#5f3f8c", 'stroke-width="3"') + "/>" +
+  '<circle cx="24" cy="50" r="4" fill="#f27fb2" fill-opacity="0.6"/>' +
+  '<circle cx="76" cy="50" r="4" fill="#f27fb2" fill-opacity="0.6"/>'
+);
+
 /* ---- números 1-10: cartão gerado (algarismo + bolinhas de contagem) --- */
 export const NUMEROS = {
+  zero: 0,
   one: 1, two: 2, three: 3, four: 4, five: 5,
   six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
   eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15,
   sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20,
+  thirty: 30, forty: 40, fifty: 50,
 }
 const CORES_NUM = ['#e94f4f', '#4f7fe9', '#5fbb63', '#f2994a', '#9b6dd6',
                    '#f27fb2', '#5b8fd6', '#b78f22', '#37743a', '#b04f7e']
 
 function numCard(id) {
   const n = NUMEROS[id]
-  const cor = CORES_NUM[(n - 1) % CORES_NUM.length]
+  const cor = CORES_NUM[((n - 1) % CORES_NUM.length + CORES_NUM.length) % CORES_NUM.length]
   // bolinhas para contar: linhas de 5, centradas em baixo
   let dots = ''
 
@@ -1622,7 +2188,7 @@ function numCard(id) {
     return wrap(
       `<text x="50" y="40" text-anchor="middle" font-family="inherit" font-size="38" font-weight="bold" fill="${cor}" stroke="${cor}" stroke-width="2">${n}</text>` + dots,
     )
-  } else {
+  } else if (n <= 20) {
     // layout para n 16-20: 4 filas com espaçamento ajustado (y=56 + 12.5*linha)
     for (let k = 0; k < n; k++) {
       const linha = Math.floor(k / 5)
@@ -1633,6 +2199,11 @@ function numCard(id) {
     }
     return wrap(
       `<text x="50" y="40" text-anchor="middle" font-family="inherit" font-size="38" font-weight="bold" fill="${cor}" stroke="${cor}" stroke-width="2">${n}</text>` + dots,
+    )
+  } else {
+    // layout para n > 20: só o algarismo, centrado verticalmente, sem bolinhas
+    return wrap(
+      `<text x="50" y="66" text-anchor="middle" font-family="inherit" font-size="52" font-weight="bold" fill="${cor}" stroke="${cor}" stroke-width="2">${n}</text>`,
     )
   }
 }
@@ -1793,13 +2364,57 @@ export const COR_DOMINANTE = {
   desk: '#c98a52',
   bell: '#f2c94c',
   lunchbox: '#e94f4f',
+  slippers: '#f27fb2',
+  pan: '#8b97a6',
+  stairs: '#a76b3d',
+  bubbles: '#8fc1ee',
+  watermelon: '#e94f4f',
+  ladybug: '#e94f4f',
+  helicopter: '#4f7fe9',
+  globe: '#4f7fe9',
+  neck: '#e8c79b',
+  belt: '#a76b3d',
+  sandcastle: '#e8c79b',
+  toy_box: '#e94f4f',
+  drawer: '#a76b3d',
+  hanger: '#4f7fe9',
+  oven: '#8b97a6',
+  kettle: '#e94f4f',
+  toaster: '#8fc1ee',
+  armchair: '#9b6dd6',
+  fireplace: '#a76b3d',
+  radio: '#e94f4f',
+  bathrobe: '#8fc1ee',
+  sponge: '#f2c94c',
+  toothpaste: '#4f7fe9',
+  grapes: '#9b6dd6',
+  lemon: '#f2c94c',
+  cereal: '#f2994a',
+  squirrel: '#c98a52',
+  bench: '#a76b3d',
+  seesaw: '#e94f4f',
+  ambulance: '#e94f4f',
+  fire_truck: '#e94f4f',
+  police_car: '#4f7fe9',
+  elbow: '#e8c79b',
+  back: '#e8c79b',
+  thumb: '#e8c79b',
+  chalk: '#b7ac95',
+  map: '#5fbb63',
+  abacus: '#e94f4f',
+  sweater: '#e94f4f',
+  cap: '#4f7fe9',
+  raincoat: '#f2c94c',
+  seagull: '#8b97a6',
+  flip_flops: '#f27fb2',
+  octopus: '#9b6dd6',
 }
 
 /* devolve a cor de borda de uma palavra: a própria cor (pack cores)
    ou a cor predominante do desenho; null → borda do tema */
 export function corDominante(id, word) {
   if (word && word.cor) return word.cor
-  if (NUMEROS[id] !== undefined) return CORES_NUM[(NUMEROS[id] - 1) % CORES_NUM.length]
+  if (NUMEROS[id] !== undefined) return CORES_NUM[((NUMEROS[id] - 1) % CORES_NUM.length + CORES_NUM.length) % CORES_NUM.length]
   return COR_DOMINANTE[id] || null
 }
 

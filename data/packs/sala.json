@@ -15,6 +15,10 @@
     { "id": "remote", "en": "remote", "pt": "comando" },
     { "id": "shelf", "en": "shelf", "pt": "prateleira" },
     { "id": "vase", "en": "vase", "pt": "jarra" },
-    { "id": "candle", "en": "candle", "pt": "vela" }
+    { "id": "candle", "en": "candle", "pt": "vela" },
+    { "id": "stairs", "en": "stairs", "pt": "escadas" },
+    { "id": "armchair", "en": "armchair", "pt": "poltrona" },
+    { "id": "fireplace", "en": "fireplace", "pt": "lareira" },
+    { "id": "radio", "en": "radio", "pt": "rádio" }
   ]
 }

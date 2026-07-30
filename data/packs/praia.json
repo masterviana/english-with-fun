@@ -13,6 +13,10 @@
     { "id": "umbrella", "en": "umbrella", "pt": "chapéu de sol" },
     { "id": "sunglasses", "en": "sunglasses", "pt": "óculos de sol" },
     { "id": "swimsuit", "en": "swimsuit", "pt": "fato de banho" },
-    { "id": "dolphin", "en": "dolphin", "pt": "golfinho" }
+    { "id": "dolphin", "en": "dolphin", "pt": "golfinho" },
+    { "id": "sandcastle", "en": "sandcastle", "pt": "castelo de areia" },
+    { "id": "seagull", "en": "seagull", "pt": "gaivota" },
+    { "id": "flip_flops", "en": "flip flops", "pt": "chinelos" },
+    { "id": "octopus", "en": "octopus", "pt": "polvo" }
   ]
 }

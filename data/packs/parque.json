@@ -18,6 +18,10 @@
     { "id": "rainbow", "en": "rainbow", "pt": "arco-íris" },
     { "id": "kite", "en": "kite", "pt": "papagaio de papel" },
     { "id": "bike", "en": "bike", "pt": "bicicleta" },
-    { "id": "grass", "en": "grass", "pt": "relva" }
+    { "id": "grass", "en": "grass", "pt": "relva" },
+    { "id": "ladybug", "en": "ladybug", "pt": "joaninha" },
+    { "id": "squirrel", "en": "squirrel", "pt": "esquilo" },
+    { "id": "bench", "en": "bench", "pt": "banco de jardim" },
+    { "id": "seesaw", "en": "seesaw", "pt": "balancé" }
   ]
 }

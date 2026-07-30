@@ -106,6 +106,7 @@ function acertou() {
 function fim() {
   ganhas.value = perfeita.value ? 2 : 1
   srs.darEstrela(ganhas.value)
+  srs.registarJogo() // conta para a garantia de desbloqueio (4 jogos)
   // o progresso desta sessão abriu o portão das novas? → festejar
   desbloqueou.value =
     bloqueadoAoInicio &&

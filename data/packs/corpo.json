@@ -20,6 +20,10 @@
     { "id": "tooth",  "en": "tooth",  "pt": "dente" },
     { "id": "tongue", "en": "tongue", "pt": "língua" },
     { "id": "belly",  "en": "belly",  "pt": "barriga" },
-    { "id": "knee",   "en": "knee",   "pt": "joelho" }
+    { "id": "knee",   "en": "knee",   "pt": "joelho" },
+    { "id": "neck",   "en": "neck",   "pt": "pescoço" },
+    { "id": "elbow",  "en": "elbow",  "pt": "cotovelo" },
+    { "id": "back",   "en": "back",   "pt": "costas" },
+    { "id": "thumb",  "en": "thumb",  "pt": "polegar" }
   ]
 }

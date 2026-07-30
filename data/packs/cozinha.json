@@ -19,6 +19,10 @@
     { "id": "strawberry", "en": "strawberry", "pt": "morango" },
     { "id": "carrot",     "en": "carrot",     "pt": "cenoura" },
     { "id": "tomato",     "en": "tomato",     "pt": "tomate" },
-    { "id": "pear",       "en": "pear",       "pt": "pera" }
+    { "id": "pear",       "en": "pear",       "pt": "pera" },
+    { "id": "pan",        "en": "pan",        "pt": "frigideira" },
+    { "id": "oven",       "en": "oven",       "pt": "forno" },
+    { "id": "kettle",     "en": "kettle",     "pt": "chaleira" },
+    { "id": "toaster",    "en": "toaster",    "pt": "torradeira" }
   ]
 }

@@ -11,6 +11,10 @@
     { "id": "truck", "en": "truck", "pt": "camião" },
     { "id": "train", "en": "train", "pt": "comboio" },
     { "id": "plane", "en": "plane", "pt": "avião" },
-    { "id": "motorbike", "en": "motorbike", "pt": "mota" }
+    { "id": "motorbike", "en": "motorbike", "pt": "mota" },
+    { "id": "helicopter", "en": "helicopter", "pt": "helicóptero" },
+    { "id": "ambulance", "en": "ambulance", "pt": "ambulância" },
+    { "id": "fire_truck", "en": "fire truck", "pt": "camião dos bombeiros" },
+    { "id": "police_car", "en": "police car", "pt": "carro da polícia" }
   ]
 }

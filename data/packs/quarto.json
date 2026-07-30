@@ -13,6 +13,10 @@
     { "id": "curtain", "en": "curtain", "pt": "cortina" },
     { "id": "doll", "en": "doll", "pt": "boneca" },
     { "id": "moon", "en": "moon", "pt": "lua" },
-    { "id": "star", "en": "star", "pt": "estrela" }
+    { "id": "star", "en": "star", "pt": "estrela" },
+    { "id": "slippers", "en": "slippers", "pt": "pantufas" },
+    { "id": "toy_box", "en": "toy box", "pt": "caixa dos brinquedos" },
+    { "id": "drawer", "en": "drawer", "pt": "gaveta" },
+    { "id": "hanger", "en": "hanger", "pt": "cabide" }
   ]
 }

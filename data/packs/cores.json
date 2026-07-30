@@ -77,6 +77,18 @@
     },
     {
       "id": "gray", "en": "gray", "pt": "cinzento", "cor": "#8b97a6"
+    },
+    {
+      "id": "gold", "en": "gold", "pt": "dourado", "cor": "#d9a520"
+    },
+    {
+      "id": "silver", "en": "silver", "pt": "prateado", "cor": "#aab6c4"
+    },
+    {
+      "id": "turquoise", "en": "turquoise", "pt": "turquesa", "cor": "#45c5c9"
+    },
+    {
+      "id": "lime", "en": "lime", "pt": "verde-lima", "cor": "#9ccc3d"
     }
   ]
 }

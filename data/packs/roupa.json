@@ -18,6 +18,10 @@
     { "id": "gloves",  "en": "gloves",  "pt": "luvas" },
     { "id": "scarf",   "en": "scarf",   "pt": "cachecol" },
     { "id": "boots",   "en": "boots",   "pt": "botas" },
-    { "id": "pyjamas", "en": "pyjamas", "pt": "pijama" }
+    { "id": "pyjamas", "en": "pyjamas", "pt": "pijama" },
+    { "id": "belt", "en": "belt", "pt": "cinto" },
+    { "id": "sweater", "en": "sweater", "pt": "camisola de lã" },
+    { "id": "cap", "en": "cap", "pt": "boné" },
+    { "id": "raincoat", "en": "raincoat", "pt": "capa de chuva" }
   ]
 }

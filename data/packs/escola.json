@@ -21,6 +21,10 @@
     { "id": "computer", "en": "computer", "pt": "computador" },
     { "id": "desk",     "en": "desk",     "pt": "secretária" },
     { "id": "bell",     "en": "bell",     "pt": "sino" },
-    { "id": "lunchbox", "en": "lunchbox", "pt": "lancheira" }
+    { "id": "lunchbox", "en": "lunchbox", "pt": "lancheira" },
+    { "id": "globe", "en": "globe", "pt": "globo" },
+    { "id": "chalk", "en": "chalk", "pt": "giz" },
+    { "id": "map", "en": "map", "pt": "mapa" },
+    { "id": "abacus", "en": "abacus", "pt": "ábaco" }
   ]
 }

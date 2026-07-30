@@ -13,6 +13,10 @@
     { "id": "comb",         "en": "comb",         "pt": "pente" },
     { "id": "duck",         "en": "duck",         "pt": "patinho" },
     { "id": "sink",         "en": "sink",         "pt": "lavatório" },
-    { "id": "toilet_paper", "en": "toilet paper", "pt": "papel higiénico" }
+    { "id": "toilet_paper", "en": "toilet paper", "pt": "papel higiénico" },
+    { "id": "bubbles", "en": "bubbles", "pt": "bolhinhas" },
+    { "id": "bathrobe", "en": "bathrobe", "pt": "roupão" },
+    { "id": "sponge", "en": "sponge", "pt": "esponja" },
+    { "id": "toothpaste", "en": "toothpaste", "pt": "pasta de dentes" }
   ]
 }
